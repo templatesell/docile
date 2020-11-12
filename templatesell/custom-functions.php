@@ -41,7 +41,7 @@ if (!function_exists('docile_add_menu_description')) :
 function docile_add_menu_description( $item_output, $item, $depth, $args ) {
 
     if( 'menu-1' == $args->theme_location  && $item->description )
-        $item_output = str_replace( '</a>', '<span class="menu-description">' . $item->description . '</span></a>', $item_output );
+        $item_output = str_replace( '</a>', '<div class="menu-description">' . $item->description . '</div></a>', $item_output );
 
     return $item_output;
 }

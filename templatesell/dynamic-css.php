@@ -30,13 +30,16 @@ if (!function_exists('docile_dynamic_css')) :
         if (!empty($docile_primary_color)) {
             $custom_css .= "
             #toTop,
+            .tags__wrapper ul li a:hover,
+            .tags__wrapper ul li a:focus,
             .trending-news .trending-news-inner .title,
+            .trending-news-two .title,
             .tab__wrapper .tabs-nav li,
             .title-highlight:before,
             .card__post__category a,
             .slide-wrap .caption .post-category,
             .docile-home-icon a,
-            span.menu-description,
+            div.menu-description,
             a.effect:before,
             .widget .widget-title:before, 
             .widget .widgettitle:before,
@@ -88,6 +91,7 @@ if (!function_exists('docile_dynamic_css')) :
             .post-footer > span a:focus,
             .widget a:hover, 
             .widget a:focus,
+            .tags__wrapper ul li a,
             .footer-menu li a:hover, 
             .footer-menu li a:focus,
             .footer-social-links a:hover,
@@ -100,7 +104,7 @@ if (!function_exists('docile_dynamic_css')) :
         // Border Color
         if (!empty($docile_primary_color)) {
             $custom_css .= "
-            span.menu-description:before{ 
+            div.menu-description:before{ 
                 border-color: transparent  ".$docile_primary_color."; 
             }";
         }

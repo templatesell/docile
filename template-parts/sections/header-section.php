@@ -26,7 +26,7 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 <header class="header-1">
 	<?php if( $enable_header == 1 ){ ?>
 		<section class="top-bar-area">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<?php if( $enable_trending == 1 ) { ?>
 						<div class="col-lg-8 col-md-12 col-sm-12 align-self-center">
@@ -91,7 +91,7 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 	?>
 	<section class="main-header <?php echo esc_attr($header_class); ?>" style="background-image:url(<?php echo esc_url($header_image) ?>); background-size: cover; background-position: center; background-repeat: no-repeat;">
 		<div class="head_one clearfix <?php echo esc_attr($logo_position);?>">
-			<div class="container-fluid">
+			<div class="container">
 				<div class="row">
 					<div class="col-lg-4 align-self-center">
 						<div class="logo ">
@@ -127,7 +127,7 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 		</div>
 	</setion><!-- #masthead -->
 	<div class="menu-area">
-		<div class="container-fluid">
+		<div class="container">
 			<div class="row justify-content-between relative">					
 				<nav id="site-navigation" class="col-lg-10 col-12 align-self-center">
 					<button class="bar-menu">
@@ -213,7 +213,20 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 		</div>
 	</div>
 </header>
-
+<div class="tags__wrapper">
+	<div class="container">
+		<div class="row">
+			<div class="col-lg-12">
+				<strong>Top Tags</strong>
+				<ul>
+					<li><a href="">tag1</a></li>
+					<li><a href="">tag1</a></li>
+					<li><a href="">tag1</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+</div>
 
 <?php if ($enable_main_trending == 1) { 
     /*

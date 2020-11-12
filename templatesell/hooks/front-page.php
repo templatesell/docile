@@ -81,7 +81,7 @@ if (!function_exists('docile_front_page_grid_slider')) :
               'ignore_sticky_posts' => true
           );
           $query = new WP_Query($query_args); ?>
-          <div class="container-fluid">
+          <div class="container">
             <div class="widget mb-0">
               <h2 class="widget-title"><?php echo esc_html($docile_grid_title); ?></h2>
             </div>
@@ -167,7 +167,7 @@ if (!function_exists('docile_front_page_you_missed')) :
             );
 
               $query = new WP_Query($query_args); ?>
-           <div class="container-fluid">   
+           <div class="container">   
            <div class="widget mb-3">
             <h3 class="widget-title"><?php echo esc_html($docile_missed_title); ?></h3>
           </div>

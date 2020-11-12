@@ -16,7 +16,7 @@ if( $promo_cat > 0 && is_home() )
     <section class="news__highlight__wrapper mb-4">
         <?php if ( is_front_page() && is_home() )
         {  ?>
-            <div class="container-fluid">
+            <div class="container">
                 <div class="docile-promo-highlights">
                     <h2 class="title-highlight text-center mb-5">
                         <?php echo esc_html($title); ?>

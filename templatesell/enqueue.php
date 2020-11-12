@@ -43,13 +43,15 @@ function docile_scripts() {
     if( 1  == $offcanvas )  {
         wp_enqueue_script( 'offcanvas-custom', get_template_directory_uri() . '/assets/js/canvas-custom.js', array('jquery'), '4.6.0', true );
     }
+    /*marquee Scripts*/
+    wp_enqueue_script( 'docile-marquee', get_template_directory_uri() . '/assets/js/custom.js', array(), '20200412', true );
     
     
     /*Custom Script JS*/
 	wp_enqueue_script( 'docile-script', get_template_directory_uri() . '/assets/js/script.js', array(), '20200412', true );
     
 	/*Custom Scripts*/
-	wp_enqueue_script( 'docile-custom', get_template_directory_uri() . '/assets/js/custom.js', array(), '20200412', true );
+	wp_enqueue_script( 'docile-custom', get_template_directory_uri() . '/assets/js/jquery.marquee.min.js', array(), '20200412', true );
     
 	global $wp_query;
     $paged = ( get_query_var( 'paged' ) > 1 ) ? get_query_var( 'paged' ) : 1;

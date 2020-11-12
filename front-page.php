@@ -15,7 +15,7 @@
 get_header();
 ?>
 <section id="content" class="site-content">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
             <div id="primary" class="col-lg-9 col-md-7 col-sm-12 content-area">
                 <main id="main" class="site-main">

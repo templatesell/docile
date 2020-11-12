@@ -18,50 +18,35 @@ $trending_id = absint($docile_theme_options['docile-select-big-trending-category
 ?>	
     <!-- Tranding news  carousel-->
 <section class="trending-news-two">
-  <div class="container-fluid">
+  <div class="container">
     <div class="row">
       <div class="col-md-12">
-        <div class="card__post__slider">
-          <?php
-          $trending_query = new WP_Query($args);
-          if ( $trending_query->have_posts()):
-          while($trending_query->have_posts())
-          : $trending_query->the_post(); ?>
-            <div class="item">
-              <!-- Post Article -->
-              <div class="card__post card__post-list">
-                <?php if(has_post_thumbnail()){ ?>
-                <div class="image-sm my-auto">
-                  <a href="<?php the_permalink();?>">
-                    <?php the_post_thumbnail('thumbnail'); ?>
-                  </a>
-                </div>
-                <?php }else{  ?>
-                  <div class="image-sm my-auto no-image-trending">
-                  </div>
-                <?php } ?>
-                
-                <div class="card__post__body my-auto">
-                  <div class="card__post__content">
-                    <div class="card__post__title">
-                      <h6 class="mb-1">
-                        <a href="<?php the_permalink();?>">
-                          <?php the_title();?>
-                        </a>
-                      </h6>
-                    </div>
-                    <div class="card__post__author-info">
-                      <ul class="list-inline">
-                        <li class="list-inline-item">
-                          <?php docile_posted_on(); ?>
-                        </li>
-                      </ul>
-                    </div>
-                  </div>
-                </div>
-              </div>
-            </div>
-          <?php endwhile; wp_reset_postdata(); endif; ?>
+        <div class="marquee__inner">
+          <div class="title">
+              <i class="fa fa-bolt"></i>
+              <strong>Top Stories</strong>
+          </div>
+          <div class="marquee-slide">
+            <?php
+            $trending_query = new WP_Query($args);
+            if ( $trending_query->have_posts()):
+            while($trending_query->have_posts())
+            : $trending_query->the_post(); ?>
+              
+                <!-- Post Article -->
+                  <?php if(has_post_thumbnail()){ ?>
+                    <a href="<?php the_permalink();?>">
+                      <?php the_post_thumbnail('thumbnail'); ?>
+                      <?php the_title();?>
+                    </a>
+                  <?php }else{  ?>
+                    <a href="<?php the_permalink();?>">
+                      <div class="image-sm my-auto no-image-trending"></div>
+                      <?php the_title();?>
+                    </a>
+                  <?php } ?>
+            <?php endwhile; wp_reset_postdata(); endif; ?>
+          </div>
         </div>
       </div>
     </div>

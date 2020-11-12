@@ -60,7 +60,7 @@ if ( is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active
         </section>
     <?php } ?>
     <div class="footer-wrap bg__footer_dark">
-    	<div class="container-fluid">
+    	<div class="container">
     		<div class="row">
     			<?php
     			for ( $i = 1; $i <= 4 ; $i++ ){
@@ -79,7 +79,7 @@ if ( is_active_sidebar('footer-1') || is_active_sidebar('footer-2') || is_active
     		</div>
     	</div>
         <footer class="site-footer">
-            <div class="container-fluid">
+            <div class="container">
                 <div class="row">
                     <div class="col-lg-6 col-md-6 col-sm-12 align-self-center">
                         <div class="copyright">

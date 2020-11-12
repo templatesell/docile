@@ -87,41 +87,20 @@
     	});
 
     	// Card Post Slider JS
-    	$('.card__post__slider').slick({
-            slidesToShow: 4,
-    		slidesToScroll: 1,
-    		autoplay: true,
-			autoplaySpeed: 5000,
-			dots: false,
-			prevArrow:
-			'<button type="button" class="slick-prev"><span class="fa fa-angle-left"></span></button>',
-			nextArrow:
-			'<button type="button" class="slick-next"><span class="fa fa-angle-right"></span></button>',
-			arrows:false,
-			responsive: [
-				{
-			      breakpoint: 992,
-			      settings: {
-			        slidesToShow: 3,
-			        slidesToScroll: 1,
-			      }
-			    },
-				{
-			      breakpoint: 768,
-			      settings: {
-			        slidesToShow: 2,
-			        slidesToScroll: 1,
-			      }
-			    },
-			    {
-			      breakpoint: 480,
-			      settings: {
-			        slidesToShow: 1,
-			        slidesToScroll: 1,
-			      }
-			    }
-			]
-    	});
+		  $('.marquee-slide').marquee({
+		    //duration in milliseconds of the marquee
+            speed: 50000,
+            //gap in pixels between the tickers
+            gap: 0,
+            //time in milliseconds before the marquee will start animating
+            delayBeforeStart: 0,
+            //'left' or 'right'
+            //direction: 'left',
+            //true or false - should the marquee be duplicated to show an effect of continues flow
+            duplicated: true,
+            pauseOnHover: true,
+            startVisible: true
+		});
 
     	// Treding Slider JS
     	$('#primary .fetured__post__carousel').slick({
