@@ -13,6 +13,7 @@ global $docile_theme_options;
 $enable_slider = absint($docile_theme_options['docile_enable_slider']);
 $enable_box = $docile_theme_options['docile_enable_promo'];
 $enable_grid = absint($docile_theme_options['docile_enable_grid_post_front']);
+$preloader = absint($docile_theme_options['docile-front-page-preloader']);
 ?>
 <!doctype html>
 <html <?php language_attributes(); ?>>
@@ -25,9 +26,11 @@ $enable_grid = absint($docile_theme_options['docile_enable_grid_post_front']);
 
 <body <?php body_class(); ?>>
 <!-- Preloader -->
+<?php if($preloader == 1 ){ ?>
     <div class="preeloader">
         <div class="preloader-spinner"></div>
     </div>
+<?php } ?>
 <!--/ End Preloader -->
 <?php
 //wp_body_open hook from WordPress 5.2

@@ -9,9 +9,7 @@
  */
 global $docile_theme_options;
 $slide_id = absint($docile_theme_options['docile-select-category']);
-$slide_right_id = absint($docile_theme_options['docile-select-category-slider-right']);
-$trending_id = absint($docile_theme_options['docile-select-category-trending']);
-      
+$slide_right_id = absint($docile_theme_options['docile-select-category-slider-right']);      
     $args = array(
 			'posts_per_page' => 3,
 			'paged' => 1,

@@ -213,21 +213,6 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 		</div>
 	</div>
 </header>
-<div class="tags__wrapper">
-	<div class="container">
-		<div class="row">
-			<div class="col-lg-12">
-				<strong>Top Tags</strong>
-				<ul>
-					<li><a href="">tag1</a></li>
-					<li><a href="">tag1</a></li>
-					<li><a href="">tag1</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-</div>
-
 <?php if ($enable_main_trending == 1) { 
     /*
     * Trending Section Hook

@@ -74,10 +74,6 @@ if ( !function_exists('docile_default_theme_options_values') ) :
             'docile-sidebar-single-page'=> 'single-right-sidebar',
             'docile-single-social-share' => 1,
 
-            /*Site Layout Options*/
-            'docile_container_width_options' => 100,
-
-
             /*Sticky Sidebar*/
             'docile-enable-sticky-sidebar' => 1,
 
@@ -89,6 +85,7 @@ if ( !function_exists('docile_default_theme_options_values') ) :
 
             /*Miscellaneous Options*/
             'docile-front-page-content'=> 1,
+            'docile-front-page-preloader'=> 0,
 
         );
 return apply_filters( 'docile_default_theme_options_values', $default_theme_options );

@@ -84,35 +84,9 @@ $wp_customize->add_control(
         'docile_options[docile-select-category-slider-right]',
         array(
             'label'     => __( 'Select Category For Slider Right', 'docile' ),
-            'description' => __('The two post of same category will be displayed right to the slider. More options are in premium version.', 'docile'),
+            'description' => __('The foru post of same category will be displayed right to the slider. More options are in premium version.', 'docile'),
             'section'   => 'docile_slider_section',
             'settings'  => 'docile_options[docile-select-category-slider-right]',
-            'type'      => 'category_dropdown',
-            'priority'  => 15,
-            'active_callback'=> 'docile_slider_active_callback',
-        )
-    )
-
-);
-
-/*Slider Category for trending Selection*/
-$wp_customize->add_setting( 'docile_options[docile-select-category-trending]', array(
-    'capability'        => 'edit_theme_options',
-    'transport' => 'refresh',
-    'default'           => $default['docile-select-category-trending'],
-    'sanitize_callback' => 'absint'
-
-) );
-
-$wp_customize->add_control(
-    new Docile_Customize_Category_Dropdown_Control(
-        $wp_customize,
-        'docile_options[docile-select-category-trending]',
-        array(
-            'label'     => __( 'Select Category for Trending Tabs', 'docile' ),
-            'description' => __('Popular posts comes on the basis of comments number and the recent post is from recent post. You need to select the category for trending.', 'docile'),
-            'section'   => 'docile_slider_section',
-            'settings'  => 'docile_options[docile-select-category-trending]',
             'type'      => 'category_dropdown',
             'priority'  => 15,
             'active_callback'=> 'docile_slider_active_callback',

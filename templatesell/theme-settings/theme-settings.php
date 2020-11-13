@@ -19,5 +19,3 @@ require get_template_directory() . '/templatesell/theme-settings/sticky-sidebar-
 require get_template_directory() . '/templatesell/theme-settings/footer-options.php';
 require get_template_directory() . '/templatesell/theme-settings/breadcrumb-options.php';
 require get_template_directory() . '/templatesell/theme-settings/miscellaneous-options.php';
-
-require get_template_directory() . '/templatesell/theme-settings/site-layout-options.php';
