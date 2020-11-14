@@ -239,7 +239,7 @@
  	}); 
 	//Loading
  	jQuery(window).load(function() {
-			jQuery(".preeloader").fadeOut('slow', function(){
+			jQuery(".layout").fadeOut('slow', function(){
 			jQuery(this).remove();
 		});
 	});	

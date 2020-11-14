@@ -7,9 +7,9 @@ function docile_scripts() {
 	/*google font  */
 	global $docile_theme_options;
     /*body  */
-    wp_enqueue_style('docile-body', '//fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&display=swap', array(), null);
+    wp_enqueue_style('docile-body', '//fonts.googleapis.com/css?family=Arimo:400,400i&display=swap', array(), null);
     /*heading  */
-    wp_enqueue_style('docile-heading', '//fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap', array(), null);
+    wp_enqueue_style('docile-heading', '//fonts.googleapis.com/css?family=Heebo:wght@400;500;600;700;800;900&display=swap', array(), null);
     /*Author signature google font  */
     wp_enqueue_style('docile-sign', '//fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap', array(), null);
     

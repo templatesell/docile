@@ -53,7 +53,7 @@ if ( !function_exists('docile_default_theme_options_values') ) :
             'docile-you-missed-select-category'=> 0, 
 
             /*Colors Options*/
-            'docile_primary_color'              => '#08f',
+            'docile_primary_color'              => '#f88c01',
  
             /*Blog Page*/
             'docile-sidebar-blog-page' => 'right-sidebar',

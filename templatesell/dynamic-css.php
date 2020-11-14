@@ -45,6 +45,7 @@ if (!function_exists('docile_dynamic_css')) :
             .widget .widgettitle:before,
             .show-more,
             a.link-format,
+            .meta_bottom .post-share a:hover,
             .tabs-nav li.current,
             .post-slider-section .s-cat,
             .sidebar-3 .widget-title:after,

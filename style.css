@@ -33,7 +33,7 @@ html, body {
 }
 /* body */
 body {
-    font-family: 'Muli', sans-serif;
+    font-family: "Arimo",sans-serif;
     font-size: 16px;
     font-style: normal;
     font-weight: normal;
@@ -72,7 +72,7 @@ h4,
 h5,
 h6 {
     margin: 0 0 15px;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Heebo', sans-serif;
     font-style: normal;
     font-weight: 500;
     line-height: 1.5;
@@ -623,61 +623,47 @@ th {
 ## Preloader
 ====================================================================
 ***/
-.preeloader {
+.layout {
     background: rgba(255, 255, 255, 1) none repeat scroll 0 0;
     height: 100%;
     position: fixed;
     width: 100%;
     z-index: 999999;
 }
-.preloader-spinner {
-    -webkit-animation: 1s ease-out 0s normal none infinite running pulsate;
-    animation: 1s ease-out 0s normal none infinite running pulsate;
-    border: 10px solid #333;
-    border-radius: 40px;
-    display: block;
-    height: 40px;
-    left: 50%;
-    margin: -20px 0 0 -20px;
-    opacity: 0;
-    position: fixed;
-    top: 50%;
-    width: 40px;
-    z-index: 10;
+.preloader {
+  position: fixed;
+  box-sizing: border-box;
+  top: calc(50vh - 32px);
+  left: calc(50% - 128px);
+  width: 256px;
+  height: 64px;
+  border-radius: 3px;
+  background-color: RGBA(100,100,100,.8);
+  box-shadow: 0 0 32px 0 #111;
+  padding: 30px;
 }
-@-webkit-keyframes pulsate {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0.1);
-        transform: scale(0.1);
-    }
 
-    50% {
-        opacity: 1;
-    }
-
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+.placeholder, 
+.progressbar {
+  width: 100%;
+  height: 4px;
+  border-radius: 2px;
+  background-color: RGBA(50,50,50,.9);
 }
-@keyframes pulsate {
-    0% {
-        opacity: 0;
-        -webkit-transform: scale(0.1);
-        transform: scale(0.1);
-    }
 
-    50% {
-        opacity: 1;
-    }
+.progressbar {
+  width: 48%;
+  background-color: orange;
+  box-shadow: 0 0 16px yellow;
+  animation-name: loading;
+  animation-duration: 5s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
 
-    100% {
-        opacity: 0;
-        -webkit-transform: scale(1.2);
-        transform: scale(1.2);
-    }
+@keyframes loading {
+  from { width: 1%; }
+  to { width: 100%; }
 }
 /***
 ====================================================================
@@ -1415,7 +1401,7 @@ th {
         text-transform: uppercase;
         letter-spacing: 0.8px;
         font-style: normal;
-        font-weight: 600;
+        font-weight: 500;
         color: #fff;
         box-sizing: border-box;
         white-space: nowrap;
@@ -1762,7 +1748,7 @@ div#MobileMenu {
     -moz-transition: 350ms;
     -o-transition: 350ms;
     transition: 350ms;
-    font-family: 'Roboto', sans-serif;
+    font-family: 'Heebo', sans-serif;
 }
 
 .canvas-btn{
@@ -2988,7 +2974,7 @@ a.effect:active {
     margin: 0 4px;
 }
 .meta_bottom .post-share a:hover {
-    background: #f28b71;
+    background: #333;
     color: #fff;
 }
 
@@ -3936,7 +3922,7 @@ input[type="radio"]:checked:before {
 .comment-list .pingback .comment-body > a {
     display: block;
     margin-top: 12px;
-    font-family: 'Lora', serif;
+    font-family: 'Arimo', serif;
     font-size: 15px;
     font-weight: 400;
     line-height: 1.7;
@@ -5241,7 +5227,7 @@ article{
 
 /* search form */
 .widget_search #searchform .search-field {
-    font-family: 'Lora', serif;
+    font-family: 'Arimo', serif;
     font-size: 15px;
     font-style: normal;
     font-weight: 400;
@@ -6801,7 +6787,7 @@ div#docile-breadcrumbs {
 .post-excerpt .wp-block-pullquote blockquote {
     margin: 0;
     padding: 0;
-    font-family: 'Lora', serif;
+    font-family: 'Arimo', serif;
     font-size: 18px !important;
     font-style: normal;
     line-height: 1.65 !important;
@@ -7301,7 +7287,7 @@ div#docile-breadcrumbs {
 .post-excerpt .wp-block-calendar #wp-calendar {
     display: table;
     text-align: center;
-    font-family: 'Lora', serif;
+    font-family: 'Arimo', serif;
     line-height: 1.7;
 }
 .post-excerpt .wp-block-calendar table caption,

@@ -9,7 +9,7 @@
 get_header();
 ?>
 <section id="content" class="site-content posts-container">
-    <div class="container-fluid">
+    <div class="container">
         <div class="row">
         	<div class="col-lg-12">
 				<div class="breadcrumbs-wrap">
