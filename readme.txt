@@ -27,30 +27,8 @@ Docile is a elegant and easy to use WordPress magazine theme. It comes with 10+ 
 
 Docile includes support for Infinite Scroll in Jetpack.
 
-== Notes ==
-* Custom pagination for numeric is made.
-
 == Changelog ==
-= 1.0.5 - October 21 2020 =
-* Div closing on pagination fixed
-
-= 1.0.4 - October 21 2020 =
-* Added upgrade notice
-* Added Upgrade to pro button
-
-= 1.0.3 - October 19 2020 =
-* Fixed reviwer issues
-* Added about page
-
-= 1.0.2 - October 19 2020 =
-* Fixed reviwer issues
-* Fixed some minor CSS issues
-
-= 1.0.1 - October 02 2020 =
-* Fixed some CSS issues
-* Fixed responsive issues
-
-= 1.0.0 - September 22 2020 =
+= 1.0.0 - November 14 2020 =
 * Initial release
 
 == Credits ==
@@ -65,35 +43,41 @@ Docile is distributed under the terms of the GNU GPL v2 or later.
 * Iscroll JS https://github.com/cubiq/iscroll/blob/master/LICENSE  [The MIT License (MIT)] Copyright (c) 2008-2013 Matteo Spinelli, http://cubiq.org
 * Slick Slider https://github.com/kenwheeler/slick/blob/master/LICENSE [The MIT License (MIT)]
 * Font-Awesome https://github.com/FortAwesome/Font-Awesome FontAwesome 4.6.3 Copyright 2012 Dave Gandy Font License: SIL OFL 1.1 Code License: MIT License http://fontawesome.io/license/
+* Aamir Afridi http://aamirafridi.com/jquery/jquery-marquee-plugin https://github.com/tobia/Pause/blob/master/LICENSE.txt GNU GENERAL PUBLIC LICENSE
 
 == Screenshot Images [CCO License] ==
-Image for theme screenshot Copyright Pxhere
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://pxhere.com/en/photo/661074
-
-Image for theme screenshot Copyright Pxhere
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://pxhere.com/en/photo/552598
-
-Image for theme screenshot, Copyright Tmaximumge
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://pxhere.com/en/photo/1608796
-
-Image for theme screenshot Copyright Pxhere
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://pxhere.com/en/photo/341841
-
-Image for theme screenshot, Copyright Robert Couse-Baker
-License: CC0 1.0 Universal (CC0 1.0)
-Source: https://pxhere.com/en/photo/526052
 
 Image for theme screenshot Copyright Pxhere
 License: CC0 1.0 Universal (CC0 1.0)
 Source: https://pxhere.com/en/photo/962915
 
-Image for theme screenshot, Copyright marcello migliosi
+Image for theme screenshot Copyright Pxhere
 License: CC0 1.0 Universal (CC0 1.0)
-Source: https://pxhere.com/en/photo/1614801
+Source: https://pxhere.com/en/photo/892653
+
+Image for theme screenshot Copyright Pxhere
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://pxhere.com/en/photo/1338927
+
+Image for theme screenshot Copyright Pxhere
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://pxhere.com/en/photo/893407
+
+Image for theme screenshot Copyright Pxhere
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://pxhere.com/en/photo/100103
+
+Image for theme screenshot Copyright Pxhere
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://pxhere.com/en/photo/314577
+
+Image for theme screenshot Copyright Kristin Hardwick
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://stocksnap.io/photo/recording-studio-YA3HZPUFYL
+
+Image for theme screenshot Copyright Matt Moloney
+License: CC0 1.0 Universal (CC0 1.0)
+https://stocksnap.io/photo/city-woman-6OQINKDPSR
 
 * Sidebar icons for the customizer are self created and license under GPL.
 * Header Advertisement Banner is self created and license under GPL.
