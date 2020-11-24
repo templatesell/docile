@@ -46,7 +46,7 @@ if ( ! function_exists( 'docile_setup' ) ) :
 		// This theme uses wp_nav_menu() in one location.
 		register_nav_menus( array(
 			'menu-1' => esc_html__( 'Primary', 'docile' ),
-			'top' => esc_html__( 'Top Menu', 'docile' ),
+			'top-menu' => esc_html__( 'Top Menu', 'docile' ),
 			'footer' => esc_html__( 'Footer Menu', 'docile' ),
 			'social' => esc_html__( 'Social Icons', 'docile' ),
 		) );

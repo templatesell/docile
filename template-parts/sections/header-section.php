@@ -28,39 +28,16 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 		<section class="top-bar-area">
 			<div class="container">
 				<div class="row">
-					<?php if( $enable_trending == 1 ) { ?>
-						<div class="col-lg-8 col-md-12 col-sm-12 align-self-center">
-							<div class="trending-news">
-								<div class="trending-news-inner">
-		                            <div class="title">
-		                                <i class="fa fa-bolt"></i>
-		                                <strong><?php echo esc_html('Trending', 'docile'); ?></strong>
-		                            </div>
-		                            <div class="trending-news-slider">
-		                                <?php 
-		                                $args = array(
-										    'post_type' => 'post',
-										    'orderby' => 'comment_count',
-										    'post_per_page'=> 10,
-										
-										);
-										// the query
-										$the_query = new WP_Query( $args ); 
-										if ( $the_query->have_posts()):
-										while($the_query->have_posts())
-											: $the_query->the_post(); ?>
-
-		                                <div class="item-single">
-		                                    <a href="javascript:void(0)">
-		                                    	<?php the_title(); ?>
-		                                    </a>
-		                                </div>
-		                                <?php endwhile; wp_reset_postdata(); endif; ?>
-		      		                </div>
-		                        </div>
-		                    </div>
-		                </div>
-					<?php } ?>
+					<div class="col-lg-8 col-md-12 col-sm-12 align-self-center">
+						<?php
+						wp_nav_menu( array(
+							'theme_location' => 'top-menu',
+							'menu_id'        => 'top-menu',
+							'container' => 'ul',
+							'menu_class'      => 'top-menu'
+						));
+						?>
+					</div>
 					<div class="col-lg-4 col-md-12 col-sm-12 align-self-center">
 						<div class="top_date_social text-right">
 							<?php if( $enable_date == 1 ) { ?>
@@ -219,6 +196,10 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
     */
         do_action('docile_action_trending');
 } ?>
+
+<?php if( $enable_trending == 1 ) { ?>
+
+<?php } ?>
 
 
 

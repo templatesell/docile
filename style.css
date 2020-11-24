@@ -689,10 +689,18 @@ th {
 .menu-area .right-side{
   float: right;
 }
-
-
+.top-menu{
+    padding: 0;
+    margin: 0;
+    list-style: none;
+}
+.top-menu li{
+    display: inline-block;
+    margin-left: 15px;
+}
 .trending-news .trending-news-inner {
     position: relative;
+    background: #fff;
 }
 .trending-news .trending-news-inner .title {
     float: left;
@@ -1930,7 +1938,7 @@ div#MobileMenu {
 .header-1 .head_one{
     background: #fff;
     border-bottom: 1px solid #f2f2f2;
-    padding: 25px 0;
+    padding: 40px 0;
 }
 .header-1 .head_one .logo{
     max-width: 400px;
