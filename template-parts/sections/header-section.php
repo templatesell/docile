@@ -11,7 +11,7 @@
 $GLOBALS['docile_theme_options'] = docile_get_options_value();
 global $docile_theme_options;
 $enable_header = absint($docile_theme_options['docile_enable_top_header']);
-$enable_trending   = absint($docile_theme_options['docile_enable_top_trending']);
+$enable_menu   = absint($docile_theme_options['docile_enable_top_menu']);
 $enable_social = absint($docile_theme_options['docile_enable_top_header_social']);
 $enable_date = absint($docile_theme_options['docile_enable_top_date']);
 $header_ads = absint($docile_theme_options['docile_enable_header_ads']);
@@ -28,6 +28,7 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 		<section class="top-bar-area">
 			<div class="container">
 				<div class="row">
+					<?php if( $enable_menu == 1 ) { ?>
 					<div class="col-lg-8 col-md-12 col-sm-12 align-self-center">
 						<?php
 						wp_nav_menu( array(
@@ -38,6 +39,7 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 						));
 						?>
 					</div>
+					<?php } ?>
 					<div class="col-lg-4 col-md-12 col-sm-12 align-self-center">
 						<div class="top_date_social text-right">
 							<?php if( $enable_date == 1 ) { ?>
@@ -190,16 +192,16 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 		</div>
 	</div>
 </header>
-<?php if ($enable_main_trending == 1) { 
+<?php  
     /*
     * Trending Section Hook
     */
+    $show_hide = esc_attr($docile_theme_options['docile_enable_trending_news_big']);
+    if($show_hide != 'hide-trending'){
         do_action('docile_action_trending');
-} ?>
+    }
+ ?>
 
-<?php if( $enable_trending == 1 ) { ?>
-
-<?php } ?>
 
 
 

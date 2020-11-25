@@ -18,7 +18,7 @@ if ( !function_exists('docile_default_theme_options_values') ) :
             /*Top Header*/
             'docile_enable_top_header'=> 1, 
             'docile_enable_top_header_social'=> 0,
-            'docile_enable_top_trending'=> 1,
+            'docile_enable_top_menu'=> 1,
             'docile_enable_top_date'=> 1,
 
             /*Header Image*/
@@ -33,7 +33,7 @@ if ( !function_exists('docile_default_theme_options_values') ) :
             'docile_enable_header_ads'=> 0,
             'docile-header-ads-image'=>'',
             'docile-header-ads-image-link'=>'',
-            'docile_enable_trending_news_big'=> 1,
+            'docile_enable_trending_news_big'=>'trending-1',
             'docile-select-big-trending-category'=> 0,
 
 

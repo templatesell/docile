@@ -119,15 +119,20 @@ $wp_customize->add_setting( 'docile_options[docile_enable_trending_news_big]', a
     'capability'        => 'edit_theme_options',
     'transport' => 'refresh',
     'default'           => $default['docile_enable_trending_news_big'],
-    'sanitize_callback' => 'docile_sanitize_checkbox'
+    'sanitize_callback' => 'docile_sanitize_select'
 ) );
 
 $wp_customize->add_control( 'docile_options[docile_enable_trending_news_big]', array(
+    'choices' => array(
+        'trending-1' => __('Slide Trending', 'docile'),
+        'trending-2' => __('One Per Slide Trending', 'docile'),
+        'hide-trending' => __('Hide Trending', 'docile'),
+    ),
     'label'     => __( 'Enable Trending News Below Menu', 'docile' ),
     'description' => __('You can enable the trending news from the category or recent posts.', 'docile'),
     'section'   => 'docile_header_section',
     'settings'  => 'docile_options[docile_enable_trending_news_big]',
-    'type'      => 'checkbox',
+    'type'      => 'select',
     'priority'  => 5,
 ) );
 

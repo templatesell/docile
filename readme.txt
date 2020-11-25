@@ -79,5 +79,9 @@ Image for theme screenshot Copyright Matt Moloney
 License: CC0 1.0 Universal (CC0 1.0)
 https://stocksnap.io/photo/city-woman-6OQINKDPSR
 
+Image for default header image Copyright  Ian Livesey
+License: CC0 1.0 Universal (CC0 1.0)
+https://stocksnap.io/photo/sunset-beach-1FU4KJBQSZ
+
 * Sidebar icons for the customizer are self created and license under GPL.
 * Header Advertisement Banner is self created and license under GPL.

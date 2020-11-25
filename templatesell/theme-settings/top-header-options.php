@@ -58,18 +58,18 @@ $wp_customize->add_control( 'docile_options[docile_enable_top_header_social]', a
 ) );
 
 /*Enable Trending in top Header*/
-$wp_customize->add_setting( 'docile_options[docile_enable_top_trending]', array(
+$wp_customize->add_setting( 'docile_options[docile_enable_top_menu]', array(
     'capability'        => 'edit_theme_options',
     'transport' => 'refresh',
-    'default'           => $default['docile_enable_top_trending'],
+    'default'           => $default['docile_enable_top_menu'],
     'sanitize_callback' => 'docile_sanitize_checkbox'
 ) );
 
-$wp_customize->add_control( 'docile_options[docile_enable_top_trending]', array(
-    'label'     => __( 'Trending in Header', 'docile' ),
-    'description' => __('Top Header Trending will display here.', 'docile'),
+$wp_customize->add_control( 'docile_options[docile_enable_top_menu]', array(
+    'label'     => __( 'Menu in Header', 'docile' ),
+    'description' => __('Top Header menu will display here.', 'docile'),
     'section'   => 'docile_top_header_section',
-    'settings'  => 'docile_options[docile_enable_top_trending]',
+    'settings'  => 'docile_options[docile_enable_top_menu]',
     'type'      => 'checkbox',
     'priority'  => 5,
     'active_callback'=>'docile_header_active_callback'

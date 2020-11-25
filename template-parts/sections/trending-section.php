@@ -24,7 +24,7 @@ $trending_id = absint($docile_theme_options['docile-select-big-trending-category
         <div class="marquee__inner">
           <div class="title">
               <i class="fa fa-bolt"></i>
-              <strong>Top Stories</strong>
+              <strong><?php echo esc_html('Trending', 'docile'); ?></strong>
           </div>
           <div class="marquee-slide">
             <?php
@@ -49,37 +49,6 @@ $trending_id = absint($docile_theme_options['docile-select-big-trending-category
           </div>
         </div>
       </div>
-        <div class="col-md-12 col-sm-12 align-self-center">
-    <div class="trending-news">
-      <div class="trending-news-inner">
-                <div class="title">
-                    <i class="fa fa-bolt"></i>
-                    <strong><?php echo esc_html('Trending', 'docile'); ?></strong>
-                </div>
-                <div class="trending-news-slider">
-                    <?php 
-                    $args = array(
-              'post_type' => 'post',
-              'orderby' => 'comment_count',
-              'post_per_page'=> 10,
-          
-          );
-          // the query
-          $the_query = new WP_Query( $args ); 
-          if ( $the_query->have_posts()):
-          while($the_query->have_posts())
-            : $the_query->the_post(); ?>
-
-                    <div class="item-single">
-                        <a href="javascript:void(0)">
-                          <?php the_title(); ?>
-                        </a>
-                    </div>
-                    <?php endwhile; wp_reset_postdata(); endif; ?>
-                  </div>
-            </div>
-        </div>
-    </div>
     </div>
   </div>
 </section>

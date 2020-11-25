@@ -58,8 +58,13 @@ if (!function_exists('docile_add_main_trending')) :
      */
     function docile_add_main_trending()
     {
-        
-        get_template_part('template-parts/sections/trending', 'section');
+        global $docile_theme_options;
+        $show_hide = esc_attr($docile_theme_options['docile_enable_trending_news_big']);
+        if($show_hide == 'trending-1'){        
+            get_template_part('template-parts/sections/trending', 'section');
+        }else {
+            get_template_part('template-parts/sections/trending', 'two');
+        }
     }
 endif;
 add_action('docile_action_trending', 'docile_add_main_trending', 10);

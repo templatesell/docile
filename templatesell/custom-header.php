@@ -18,7 +18,7 @@
  */
 function docile_custom_header_setup() {
 	add_theme_support( 'custom-header', apply_filters( 'docile_custom_header_args', array(
-		'default-image'          => '',
+		'default-image'          => get_stylesheet_directory_uri() . '/assets/images/header-bg.jpg',
 		'default-text-color'     => '000000',
 		'width'                  => 1920,
 		'height'                 => 450,
