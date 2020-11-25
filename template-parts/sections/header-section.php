@@ -41,7 +41,7 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 					</div>
 					<?php } ?>
 					<div class="col-lg-4 col-md-12 col-sm-12 align-self-center">
-						<div class="top_date_social text-right">
+						<div class="top_date_social">
 							<?php if( $enable_date == 1 ) { ?>
 								<div class="today-date">
 									<p><?php echo date_i18n(__('l, F d, Y','docile')); ?></p>
