@@ -1,4 +1,5 @@
 <?php
+$GLOBALS['docile_theme_options'] = docile_get_options_value();
 /*Top Header Options*/
 $wp_customize->add_section( 'docile_top_header_section', array(
    'priority'       => 20,

@@ -1,4 +1,6 @@
 <?php
+$GLOBALS['docile_theme_options'] = docile_get_options_value();
+
 /*Promo Section Options*/
 
 $wp_customize->add_section( 'docile_promo_section', array(

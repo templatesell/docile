@@ -1,4 +1,6 @@
 <?php 
+$GLOBALS['docile_theme_options'] = docile_get_options_value();
+
 /* Front Page Options Panel */
     $wp_customize->add_panel( 'docile_front_page', array(
         'priority' => 30,

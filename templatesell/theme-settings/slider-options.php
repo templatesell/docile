@@ -1,6 +1,6 @@
 <?php
+$GLOBALS['docile_theme_options'] = docile_get_options_value();
 /*Slider Options*/
-
 $wp_customize->add_section( 'docile_slider_section', array(
    'priority'       => 20,
    'capability'     => 'edit_theme_options',

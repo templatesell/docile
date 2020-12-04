@@ -22,8 +22,6 @@ if (!function_exists('docile_dynamic_css')) :
         $docile_header_transparent  = esc_attr($docile_theme_options['docile_slider_overlay_transparent']);
         $docile_header_min_height              = absint($docile_theme_options['docile_header_image_height']);
 
-        $docile_side_width             = absint($docile_theme_options['docile_container_width_options']);
-
         $custom_css = '';
 
         //Primary  Background 
@@ -139,14 +137,6 @@ if (!function_exists('docile_dynamic_css')) :
             $custom_css .= "
             .header-1 .header-image .head_one { 
                 min-height : ". $docile_header_min_height."px; 
-            }";
-        }
-
-        //Header Min Height
-        if (!empty($docile_side_width)) {
-            $custom_css .= "
-            .container-fluid { 
-                width : ". $docile_side_width."%; 
             }";
         }
 
