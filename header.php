@@ -27,14 +27,9 @@ $preloader = absint($docile_theme_options['docile-front-page-preloader']);
 <body <?php body_class(); ?>>
 <!-- Preloader -->
 <?php if($preloader == 1 ){ ?>
-<div class="layout">
-  <div class="preloader">
-    <div class="placeholder">
-      <div class="progressbar">
-      </div>
+<div class="preloader">
+      <div class="spinner"></div>
     </div>
-  </div>
-</div>
 <?php } ?>
 <!--/ End Preloader -->
 <?php

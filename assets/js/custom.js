@@ -238,9 +238,9 @@
 
  	}); 
 	//Loading
- 	jQuery(window).load(function() {
-			jQuery(".layout").fadeOut('slow', function(){
-			jQuery(this).remove();
-		});
-	});	
+ 	$(window).on('load', function(){
+        setTimeout(()=>{
+            $('.preloader').fadeOut()
+        }, 250)
+    })	
 })(jQuery);
