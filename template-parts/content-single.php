@@ -71,7 +71,7 @@ $image = absint($docile_theme_options['docile-single-page-featured-image']);
                 ?>
             </footer><!-- .entry-footer -->
             <?php the_post_navigation(); ?>
-            <div class="col-lg-12">
+            <div class="clearfix">
                 <?php 
                 /**
                  * docile_related_posts hook

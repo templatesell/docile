@@ -20,7 +20,7 @@ get_header();
 			</div>
 		</div>
 		<div class="row">
-			<div id="primary" class="col-lg-9 col-md-8 col-sm-12 content-area">
+			<div id="primary" class="col-lg-8 col-md-8 col-sm-12 content-area">
 				<main id="main" class="site-main">
 					<?php
 						while ( have_posts() ) :
@@ -36,7 +36,7 @@ get_header();
 			        ?>
 				</main><!-- #main -->
 			</div><!-- #primary -->
-			<aside id="secondary" class="col-lg-3 col-md-4 col-sm-12 widget-area side-right">
+			<aside id="secondary" class="col-lg-4 col-md-4 col-sm-12 widget-area side-right">
 				<?php get_sidebar(); ?>
 			</aside><!-- #secondary -->
 		</div>

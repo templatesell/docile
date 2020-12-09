@@ -43,7 +43,7 @@ body {
     text-rendering: optimizelegibility;
     -moz-osx-font-smoothing: grayscale;
     -webkit-font-smoothing: antialiased;
-    background: #fcfcfc;
+    background: #f7f7f7;
 }
 
 /* links */
@@ -708,6 +708,9 @@ th {
 .top-menu li{
     display: inline-block;
     margin-left: 15px;
+}
+.top-menu li a{
+    font-size: 14px;
 }
 .trending-news .trending-news-inner {
     position: relative;
@@ -2329,8 +2332,8 @@ div#MobileMenu {
     display: flex;
     -ms-flex-wrap: wrap;
     flex-wrap: wrap;
-    margin-right: -15px;
-    margin-left: -15px;
+    padding: 15px 0;
+    background: #fff;
 }
 .search .content-area article,
 .archive .content-area article{
@@ -3246,6 +3249,14 @@ a.link-format:hover {
  ## Single post page
  * -------------------------------------------------------------
  */
+ .single .post-wrap{
+    background: #fff;
+    padding: 25px;
+ }
+.single .post-wrap .post-media{
+    margin-left: -25px;
+    margin-right: -25px;
+}
 .archive.woocommerce .posts-container,
 .page .posts-container,
 .single .posts-container{
@@ -3672,6 +3683,9 @@ input[type="radio"]:checked:before {
     font-weight: 400;
     line-height: 1.7;
     color: #4c4f53;
+    padding: 25px;
+    background-color: #ffffff;
+    margin: 20px 0;
 }
 
 /* comments area: styles for Font Awesome icons */
@@ -3694,11 +3708,7 @@ input[type="radio"]:checked:before {
 }
 
 /* comment form */
-.comment-form {
-    margin-bottom: 40px;
-    padding: 25px;
-    background-color: #ffffff;
-}
+
 .comment-form-comment {
     margin-bottom: 7px;
 }
@@ -4206,13 +4216,16 @@ input[type="radio"]:checked:before {
 .post-wrap .related-posts .post-title {
     font-size: 18px;
 }
-.post-wrap .related-posts .post-content{
-    padding: 15px 10px;
-}
+
 .post-wrap.left-image .related-posts{
     display: none;
 }
-
+.post-wrap .related-posts .post-wrap{
+    padding: 0;
+}
+.post-wrap .related-posts .post-media{
+    margin: 0;
+}
 
 /*Slick arrow*/
 .related-posts-list  .slick-arrow {
@@ -4583,6 +4596,8 @@ article{
     font-weight: 400;
     line-height: 1.7;
     color: #4c4f53;
+    background: #fff;
+    padding: 15px;
 }
 
 .widget a:hover,

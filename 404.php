@@ -10,7 +10,7 @@
 get_header();
 ?>
 <section id="content" class="site-content posts-container">
-	<div class="container-fluid">
+	<div class="container">
 		<div class="row">
 			<div id="primary" class="col-md-12 page-404-container">
 				<main id="main" class="site-main">

@@ -82,12 +82,12 @@ if (!function_exists('docile_front_page_grid_slider')) :
           );
           $query = new WP_Query($query_args); ?>
           <div class="container">
-            <div class="widget mb-0">
+            <div class="widget">
               <h2 class="widget-title"><?php echo esc_html($docile_grid_title); ?></h2>
-            </div>
+            
               <div class="row">
                 <div class="col-lg-12">
-                  <div class="grid__slider__carousel mb-4">
+                  <div class="grid__slider__carousel">
                     <?php if ($query->have_posts()) :
                     while ($query->have_posts()) :
                     $query->the_post();
@@ -141,6 +141,7 @@ if (!function_exists('docile_front_page_grid_slider')) :
                     ?>
                </div>
               </div>
+              </div>
             </div>
           </div>
 <?php    }
@@ -168,16 +169,16 @@ if (!function_exists('docile_front_page_you_missed')) :
 
               $query = new WP_Query($query_args); ?>
            <div class="container">   
-           <div class="widget mb-3">
+           <div class="widget">
             <h3 class="widget-title"><?php echo esc_html($docile_missed_title); ?></h3>
-          </div>
+          
           <div class="row">
           <?php if ($query->have_posts()) :
             while ($query->have_posts()) :
             $query->the_post();
           ?>
             <div class="col-lg-3 col-md-6 col-sm-12">
-                <div class="post__grid mb-4">
+                <div class="post__grid mb-2">
                     <!-- Post Article -->
                     <div class="card__post">
                         <div class="card__post__body">
@@ -226,6 +227,7 @@ if (!function_exists('docile_front_page_you_missed')) :
                 wp_reset_postdata();
               endif;
               ?>
+        </div>
         </div>
         </div> 
 <?php    }
