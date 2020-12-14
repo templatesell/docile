@@ -24,6 +24,8 @@ get_header();
 					<?php do_action('docile_breadcrumb_options_hook'); ?> <!-- Breadcrumb hook -->
 				</div>
 			</div>
+		</div>
+		<div class="row">
 			<div id="primary" class="col-lg-8 col-md-7 col-sm-12 content-area">
 				<main id="main" class="site-main">
 					<?php if ( have_posts() ) : ?>
