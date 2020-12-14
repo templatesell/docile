@@ -4,7 +4,7 @@ Contributors: templatesell
 Tags: custom-background, custom-logo, custom-menu, featured-images, threaded-comments, translation-ready, blog, news
 Requires at least: 4.5
 Requires PHP: 4.7
-Tested up to: 5.5
+Tested up to: 5.6
 Stable tag: 1.0.0
 License: GNU General Public License v2 or later
 License URI: http://www.gnu.org/licenses/gpl-2.0.html
@@ -28,6 +28,11 @@ Docile is a elegant and easy to use WordPress magazine theme. It comes with 10+ 
 Docile includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+= 1.0.4 - December 14 2020 =
+* Screenshot changed
+* Fixed some minor CSS issues
+* Fixed background of widget issues
+
 = 1.0.3 - December 11 2020 =
 * Recommended demo importer plugin
 
@@ -60,6 +65,10 @@ Docile is distributed under the terms of the GNU GPL v2 or later.
 * Aamir Afridi http://aamirafridi.com/jquery/jquery-marquee-plugin https://github.com/tobia/Pause/blob/master/LICENSE.txt GNU GENERAL PUBLIC LICENSE
 
 == Screenshot Images [CCO License] ==
+
+Image for theme screenshot Copyright rawpixel.com
+License: CC0 1.0 Universal (CC0 1.0)
+Source: https://pxhere.com/en/photo/1431501
 
 Image for theme screenshot Copyright Pxhere
 License: CC0 1.0 Universal (CC0 1.0)
