@@ -115,6 +115,7 @@ if (!class_exists('Docile_Post_Grid')) :
               ?>
         </div> 
         <?php 
+        echo $args['after_widget'];
     }
 
     function update($new_instance, $old_instance)

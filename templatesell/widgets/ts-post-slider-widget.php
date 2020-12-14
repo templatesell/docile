@@ -91,12 +91,8 @@ if (!class_exists('Docile_Post_Slider')) :
             endif;
             ?>
         </div>
-        <?php 
-
-        
-        echo $args['after_widget']; ?>            
-        
-        <?php 
+        <?php        
+        echo $args['after_widget'];
     }
 
     function update($new_instance, $old_instance)

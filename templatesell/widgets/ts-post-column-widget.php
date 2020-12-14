@@ -151,6 +151,7 @@ if (!class_exists('Docile_Post_Column')) :
             </div>
           </div> 
         <?php 
+        echo $args['after_widget'];
     }
 
     function update($new_instance, $old_instance)
