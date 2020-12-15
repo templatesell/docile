@@ -97,7 +97,7 @@ $wp_customize->add_setting('docile_options[docile-pagination-options]', array(
 $wp_customize->add_control('docile_options[docile-pagination-options]', array(
     'choices' => array(
         'numeric' => __('Numeric Pagination', 'docile'),
-        'ajax' => __('Ajax Pagination', 'docile'),
+        'default' => __('Previous and Next Pagination', 'docile'),
     ),
     'label' => __('Pagination Types', 'docile'),
     'description' => __('Choose Required Pagination Type', 'docile'),
