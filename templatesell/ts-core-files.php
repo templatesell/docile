@@ -100,3 +100,15 @@ require get_template_directory() . '/templatesell/filters/body-class.php';
  */
 require get_template_directory() . '/inc/library/tgm-plugin-activation.php';
 require get_template_directory() . '/inc/library/tgm.php';
+
+/**
+ * Upgrade to pro
+ */
+ require get_template_directory() . '/templatesell/upgrade/class-customize.php';
+
+/**
+ * For Admin Page
+ */
+if ( is_admin() ) {
+ require get_template_directory() . '/templatesell/about/about.php';
+}
