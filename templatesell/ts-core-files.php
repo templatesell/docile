@@ -111,4 +111,5 @@ require get_template_directory() . '/inc/library/tgm.php';
  */
 if ( is_admin() ) {
  require get_template_directory() . '/templatesell/about/about.php';
+ require get_template_directory() . '/templatesell/pro-notice/pro-notice.php';
 }
