@@ -912,6 +912,7 @@ th {
     cursor: pointer;
     width: 40px;
     text-align: center;
+    color: #fff;
 }
 
 /*
@@ -1720,9 +1721,6 @@ th {
     .main-menu > ul > li > a {
         line-height: normal!important;
     }
-    .header-1 .header-image .main-menu ul{
-        background:transparent;
-    }
 }
 
 .menu_right {
@@ -1936,11 +1934,7 @@ div#MobileMenu {
 .header-image .canvas-btn span{
     background: #fff;
 }
-@media (max-width: 991px) {
-    .header-1 .header-image .canvas-btn ul{
-        background:transparent;
-    }
-}
+
 /*====================================================
 ## Header One
 =======================================================*/
@@ -2018,7 +2012,7 @@ div#MobileMenu {
     .header-1 .header-image .head_one .logo{
         padding: 5px;
     }
-    .header-1 .header-image .main-menu > ul {
+    .header-1 .main-menu > ul {
         width: 100%;
         background: #fff;
         top: 100%;
