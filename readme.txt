@@ -28,6 +28,9 @@ Docile is a elegant and easy to use WordPress magazine theme. It comes with 10+ 
 Docile includes support for Infinite Scroll in Jetpack.
 
 == Changelog ==
+= 1.0.8 - February 06 2021 =
+* Pro notice for backend is added
+
 = 1.0.7 - December 18 2020 =
 * Pro notice for backend is added
 
