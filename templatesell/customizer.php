@@ -78,7 +78,7 @@ if ( !function_exists('docile_default_theme_options_values') ) :
             'docile-enable-sticky-sidebar' => 1,
 
             /*Footer Section*/
-            'docile-footer-copyright'  => esc_html__('Copyright All Rights Reserved 2020','docile'),
+            'docile-footer-copyright'  => esc_html__('Copyright All Rights Reserved 2021','docile'),
 
             /*Breadcrumb Options*/
             'docile-extra-breadcrumb' => 1,
