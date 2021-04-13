@@ -43,7 +43,7 @@ $trending_id = absint($docile_theme_options['docile-select-big-trending-category
                 : $the_query->the_post(); ?>
 
                         <div class="item-single">
-                            <a href="javascript:void(0)">
+                            <a href="<?php the_permalink(); ?>">
                               <?php the_title(); ?>
                             </a>
                         </div>
