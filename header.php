@@ -8,7 +8,6 @@
  *
  * @package Docile
  */
-$GLOBALS['docile_theme_options'] = docile_get_options_value();
 global $docile_theme_options;
 $enable_slider = absint($docile_theme_options['docile_enable_slider']);
 $enable_box = $docile_theme_options['docile_enable_promo'];
