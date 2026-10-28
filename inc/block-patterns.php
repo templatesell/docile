@@ -2,9 +2,7 @@
 /**
  * Block patterns and block styles.
  *
- * Registered on init rather than at file scope: registering a pattern loads its
- * translated strings, and doing that before init makes WordPress 6.7 and later
- * fire a _load_textdomain_just_in_time doing_it_wrong notice.
+ * Registered on init to avoid early textdomain loading notices.
  *
  * @package Docile
  */

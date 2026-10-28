@@ -12,11 +12,7 @@
 if ( ! function_exists( 'docile_hex_to_rgba' ) ) :
 
     /**
-     * Turn a hex colour into an rgba() string.
-     *
-     * The customizer stores the primary colour as hex, but the soft ring behind
-     * a focused field has to be translucent so the field border still shows
-     * through it.
+     * Convert a hex colour to an rgba() string.
      *
      * @param string $hex   Colour, with or without the leading hash.
      * @param float  $alpha Opacity between 0 and 1.
@@ -120,7 +116,7 @@ if (!function_exists('docile_dynamic_css')) :
                 border-color: ".$docile_primary_color.";
             }";
 
-            // Selectors the stylesheet paints red that this used to miss.
+            // Extra primary colour selectors.
             $custom_css .= "
             article.format-aside .post-content .post-format::after,
             article.format-quote .post-content .post-format::after,
@@ -223,7 +219,7 @@ if (!function_exists('docile_dynamic_css')) :
                 color : ". $docile_primary_color."; 
             }";
 
-            // Selectors the stylesheet paints red that this used to miss.
+            // Extra primary colour selectors.
             $custom_css .= "
             blockquote:before,
             .posts-navigation .nav-links a:hover,
@@ -287,7 +283,7 @@ if (!function_exists('docile_dynamic_css')) :
                 border-color: ".$docile_primary_color."; 
             }";
 
-            // Selectors the stylesheet paints red that this used to miss.
+            // Extra primary colour selectors.
             $custom_css .= "
             div.menu-description:before,
             .main-menu.submenu-top-border li > ul,

@@ -1,11 +1,4 @@
-/*
- * Editor styles.
- *
- * This file shipped empty, and the editor was told to load Muli and Roboto
- * while the front end loaded Arimo and Heebo, so a post never looked in the
- * editor the way it would look published. Everything here mirrors a value that
- * already exists in style.css.
- */
+/* Editor styles, mirroring style.css. */
 
 .editor-styles-wrapper {
     font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -56,10 +49,7 @@
     text-underline-offset: 2px;
 }
 
-/*
- * The front end sets blockquote in a serif. It used to name Playfair Display,
- * which the theme never loaded, so quotes fell back to the browser default.
- */
+/* Blockquote font. */
 .editor-styles-wrapper blockquote,
 .editor-styles-wrapper .wp-block-quote {
     font-family: Georgia, "Times New Roman", Times, serif;
@@ -143,13 +133,13 @@
     padding: 12px 24px;
 }
 
-/* Match the sizes registered with add_theme_support( 'editor-font-sizes' ). */
+/* Sizes from the editor-font-sizes theme support. */
 .editor-styles-wrapper .has-small-font-size  { font-size: 16px; }
 .editor-styles-wrapper .has-medium-font-size { font-size: 20px; }
 .editor-styles-wrapper .has-large-font-size  { font-size: 25px; }
 .editor-styles-wrapper .has-larger-font-size { font-size: 35px; }
 
-/* The three block styles registered in inc/block-patterns.php. */
+/* Block styles from inc/block-patterns.php. */
 
 .editor-styles-wrapper .wp-block-quote.is-style-docile-statement {
     border-left: 0;

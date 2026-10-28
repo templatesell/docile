@@ -8,9 +8,7 @@
  */
 
 /**
- * Theme version, used to cache-bust every asset the theme enqueues.
- *
- * Keep this in step with the Version header in style.css.
+ * Theme version, used for asset cache busting.
  */
 if ( ! defined( 'DOCILE_VERSION' ) ) {
 	define( 'DOCILE_VERSION', '1.1.3' );
@@ -100,10 +98,10 @@ if ( ! function_exists( 'docile_setup' ) ) :
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
 
-		// Let blocks use the wide and full alignments the layout supports.
+		// Wide and full alignments.
 		add_theme_support( 'align-wide' );
 
-		// Render posts in the editor the way the front end will show them.
+		// Editor styles.
 		add_editor_style( 'css/editor-styles.css' );
 
 		// Add support for default block styles.

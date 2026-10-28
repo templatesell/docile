@@ -6,7 +6,7 @@ function docile_scripts() {
 
 	/*google font  */
 	global $docile_theme_options;
-    /* Arimo, Heebo and Monsieur La Doulaise, served from the theme. */
+    /* Locally hosted fonts. */
     wp_enqueue_style( 'docile-fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), DOCILE_VERSION );
     
 	//*Font-Awesome-master*/

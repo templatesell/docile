@@ -40,7 +40,7 @@
             $( '.' + focusClass ).focus();
         }
 
-        // Escape has to close the panel, or the focus trap has no exit.
+        // Escape closes the panel.
         $(document).on('keydown', function(e) {
             if ( ( e.key === 'Escape' || e.keyCode === 27 ) && $(".canvas-header").hasClass("activate") ) {
                 closePanel();

@@ -1,12 +1,6 @@
 <?php
 /**
- * Wrap the post counts that list widgets print.
- *
- * The Categories and Archives widgets print their count as bare text after the
- * link, like "Travel (10)". There is no element around it, so a theme cannot
- * style the number on its own. These filters put it in a span so the stylesheet
- * can render it as a badge, and label it so a screen reader reads something
- * meaningful instead of a stray number in brackets.
+ * Wrap widget post counts in a span so they can be styled.
  *
  * @package Docile
  */
@@ -18,7 +12,7 @@ if ( ! defined( 'ABSPATH' ) ) {
 if ( ! function_exists( 'docile_wrap_list_counts' ) ) :
 
 	/**
-	 * Put a span around the "(12)" a list widget prints after each link.
+	 * Wrap the "(12)" count printed after each link.
 	 *
 	 * @param string $html Widget markup.
 	 * @return string
