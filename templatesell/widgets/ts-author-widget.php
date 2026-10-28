@@ -356,7 +356,7 @@ endif;
 add_action('admin_enqueue_scripts', 'docile_widgets_backend_enqueue');
 function docile_widgets_backend_enqueue()
 {
-    wp_register_script('docile-custom-widgets', get_template_directory_uri() . '/assets/js/widgets.js', array('jquery'), true);
+    wp_register_script('docile-custom-widgets', get_template_directory_uri() . '/assets/js/widgets.js', array('jquery'), DOCILE_VERSION, true);
     
     wp_enqueue_media();
     wp_enqueue_script('docile-custom-widgets');

@@ -6,23 +6,19 @@ function docile_scripts() {
 
 	/*google font  */
 	global $docile_theme_options;
-    /*body  */
-    wp_enqueue_style('docile-body', '//fonts.googleapis.com/css?family=Arimo:400,400i&display=swap', array(), null);
-    /*heading  */
-    wp_enqueue_style('docile-heading', '//fonts.googleapis.com/css?family=Heebo:wght@400;500;600;700;800;900&display=swap', array(), null);
-    /*Author signature google font  */
-    wp_enqueue_style('docile-sign', '//fonts.googleapis.com/css?family=Monsieur+La+Doulaise&display=swap', array(), null);
+    /* Arimo, Heebo and Monsieur La Doulaise, served from the theme. */
+    wp_enqueue_style( 'docile-fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), DOCILE_VERSION );
     
 	//*Font-Awesome-master*/
-    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.5.0' );
+    wp_enqueue_style( 'font-awesome', get_template_directory_uri() . '/css/font-awesome.min.css', array(), '4.7.0' );
 
-    wp_enqueue_style( 'grid-css', get_template_directory_uri() . '/css/grid.css', array(), '4.5.0' );
+    wp_enqueue_style( 'grid-css', get_template_directory_uri() . '/css/grid.css', array(), DOCILE_VERSION );
     
     /*Slick CSS*/
-    wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/slick.css', array(), '4.5.0' );
+    wp_enqueue_style( 'slick', get_template_directory_uri() . '/assets/css/slick.css', array(), '1.8.0' );
 
    /*Main CSS*/
-    wp_enqueue_style( 'docile-style', get_stylesheet_uri() );
+    wp_enqueue_style( 'docile-style', get_stylesheet_uri(), array(), DOCILE_VERSION );
 
 	/*RTL CSS*/
 	wp_style_add_data( 'docile-style', 'rtl', 'replace' );
@@ -31,17 +27,17 @@ function docile_scripts() {
     
     if( 'ajax' == $docile_pagination_option )  {
     	
-    	wp_enqueue_script( 'docile-custom-pagination', get_template_directory_uri() . '/assets/js/custom-infinte-pagination.js', array('jquery'), '4.6.0', true );
+    	wp_enqueue_script( 'docile-custom-pagination', get_template_directory_uri() . '/assets/js/custom-infinte-pagination.js', array('jquery'), DOCILE_VERSION, true );
     }
 
 	wp_enqueue_script( 'docile-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20200412', true );
 
 	/*Slick JS*/
-    wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.js', array('jquery'), '4.6.0', true  );
+    wp_enqueue_script( 'slick', get_template_directory_uri() . '/assets/js/slick.js', array('jquery'), '1.8.0', true  );
     
     $offcanvas =  absint($docile_theme_options['docile_enable_offcanvas']);
     if( 1  == $offcanvas )  {
-        wp_enqueue_script( 'offcanvas-custom', get_template_directory_uri() . '/assets/js/canvas-custom.js', array('jquery'), '4.6.0', true );
+        wp_enqueue_script( 'offcanvas-custom', get_template_directory_uri() . '/assets/js/canvas-custom.js', array('jquery'), DOCILE_VERSION, true );
     }
     /*marquee Scripts*/
     wp_enqueue_script( 'docile-marquee', get_template_directory_uri() . '/assets/js/custom.js', array(), '20200412', true );
@@ -84,26 +80,8 @@ add_action( 'wp_enqueue_scripts', 'docile_scripts' );
  * Enqueue fonts for the editor style
  */
 function docile_block_styles() {
-    wp_enqueue_style( 'docile-editor-styles', get_theme_file_uri( 'css/editor-styles.css' ) );
-
-    /*body  */
-    wp_enqueue_style('docile-body', '//fonts.googleapis.com/css?family=Muli:400,400i,500,600,700&display=swap', array(), null);
-    /*heading  */
-    wp_enqueue_style('docile-heading', '//fonts.googleapis.com/css?family=Roboto:ital,wght@0,400;0,500;0,700;0,900;1,500;1,700&display=swap', array(), null);
-
-    $docile_custom_css = '
-    .edit-post-visual-editor.editor-styles-wrapper{ font-family: Muli;}
-
-    .editor-post-title__block .editor-post-title__input,
-    .editor-styles-wrapper h1,
-    .editor-styles-wrapper h2,
-    .editor-styles-wrapper h3,
-    .editor-styles-wrapper h4,
-    .editor-styles-wrapper h5,
-    .editor-styles-wrapper h6{font-family:Roboto;} 
-    ';
-
-    wp_add_inline_style( 'docile-editor-styles', $docile_custom_css );
+    wp_enqueue_style( 'docile-fonts', get_template_directory_uri() . '/assets/fonts/fonts.css', array(), DOCILE_VERSION );
+    wp_enqueue_style( 'docile-editor-styles', get_theme_file_uri( 'css/editor-styles.css' ), array( 'docile-fonts' ), DOCILE_VERSION );
 }
 
 add_action( 'enqueue_block_editor_assets', 'docile_block_styles' );

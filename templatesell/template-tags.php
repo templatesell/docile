@@ -26,11 +26,7 @@ if ( ! function_exists( 'docile_posted_on' ) ) :
 	$posted_on = 
 		'<a href="' . esc_url( get_permalink() ) . '" rel="bookmark"> <i class="fa fa-clock-o"></i>' . $time_string . '</a>';
 
-	$byline = sprintf(
-            esc_html_x('By %s', 'post author', 'docile'),
-            '<span class="author vcard"><a class="url fn n" href="' . esc_url(get_author_posts_url(get_the_author_meta('ID'))) . '">' . esc_html(get_the_author()) . '</a></span>'
-        );
-        echo '<span class="posted-on">' . $posted_on . '</span>';
+        echo '<span class="posted-on">' . $posted_on . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- built from escaped parts above.
 	}
 endif;
 
@@ -39,12 +35,9 @@ if ( ! function_exists( 'docile_posted_by' ) ) :
 	 * Prints HTML with meta information for the current author.
 	 */
 	function docile_posted_by() {
-		$byline = sprintf(
-			/* translators: %s: post author. */
-			esc_html_x( '%s', 'post author', 'docile' ),
-			'<span class="author vcard"><i class="fa fa-user-circle-o"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>'
-		);
-        echo '<span class="post_by"> ' . $byline . '</span>'; // WPCS: XSS OK.
+		$byline = '<span class="author vcard"><i class="fa fa-user-circle-o" aria-hidden="true"></i><a class="url fn n" href="' . esc_url( get_author_posts_url( get_the_author_meta( 'ID' ) ) ) . '">' . esc_html( get_the_author() ) . '</a></span>';
+
+        echo '<span class="post_by"> ' . $byline . '</span>'; // phpcs:ignore WordPress.Security.EscapeOutput.OutputNotEscaped -- built from escaped parts above.
 	}
 endif;
 
@@ -59,13 +52,16 @@ if ( ! function_exists( 'docile_entry_meta' ) ) :
 		$categories_list = get_the_category_list( esc_html__( ', ', 'docile' ) );
 
 		if ( $categories_list ) {
-			echo '<span class="cat-links">' . $categories_list . '</span>';
+			printf( '<span class="cat-links">%s</span>', wp_kses_post( $categories_list ) );
 		}
 
 		/* translators: used between list items, there is a space after the comma */
 		$tags_list = get_the_tag_list( '', esc_html__( ', ', 'docile' ) );
 		if ( $tags_list && is_singular() ) {
-			printf( '<span class="tags-links">' . '<i class="fa fa-tag"></i>' . '</span>', $tags_list ); // WPCS: XSS OK.
+			printf(
+				'<span class="tags-links"><i class="fa fa-tag" aria-hidden="true"></i>%s</span>',
+				wp_kses_post( $tags_list )
+			);
 		}
       	
 	}
@@ -101,7 +97,7 @@ if (!function_exists('docile_post_thumbnail')) :
             <?php
             $image_size = 'large';
                 ?>
-                <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true">
+                <a class="post-thumbnail" href="<?php the_permalink(); ?>" aria-hidden="true" tabindex="-1">
                     <?php
 
                     the_post_thumbnail( $image_size, array(

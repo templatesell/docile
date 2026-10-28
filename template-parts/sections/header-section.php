@@ -133,17 +133,18 @@ $logo_position = esc_attr($docile_theme_options['docile-logo-position']);
 				<div class="col-lg-2 col-5 align-self-center mob-right">
 					<div class="menu_right">
 						<?php if( 1 == $offcanvas ){ ?>
-						<a class="canvas-btn" href="javascript:void(0)">
-							<span></span>
-							<span></span>
-							<span></span>
+						<a class="canvas-btn" href="#offcanvas-panel" role="button" aria-controls="offcanvas-panel" aria-expanded="false">
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span aria-hidden="true"></span>
+							<span class="screen-reader-text"><?php esc_html_e( 'Open sidebar panel', 'docile' ); ?></span>
 						</a>
 						<?php } ?>
 						<!-- Offcanvas Start-->
 						<?php if( 1 == $offcanvas ){ ?>
-							<div class="offcanvas__wrapper">
+							<div class="offcanvas__wrapper" id="offcanvas-panel">
 								<div class="canvas-header close-btn" data-focus="canvas-btn">
-									<a href="javascript:void(0)"><i class="fa fa-close"></i></a>
+									<a href="#" role="button"><i class="fa fa-close" aria-hidden="true"></i><span class="screen-reader-text"><?php esc_html_e( 'Close sidebar panel', 'docile' ); ?></span></a>
 								</div>
 								<div  class="canvas-header offcanvas__block">
 									<div class="canvas-header-block">

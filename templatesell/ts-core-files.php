@@ -94,6 +94,7 @@ require get_template_directory() . '/templatesell/hooks/front-page.php';
 require get_template_directory() . '/templatesell/filters/excerpt.php';
 require get_template_directory() . '/templatesell/filters/jetpack-widget.php';
 require get_template_directory() . '/templatesell/filters/body-class.php';
+require get_template_directory() . '/templatesell/filters/widget-counts.php';
 
 /**
  * TGM Library and function load

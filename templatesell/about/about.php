@@ -16,7 +16,7 @@ add_action( 'admin_menu', 'docile_menu' );
  */
 function docile_admin_scripts() {
 	if(is_admin()){
-		wp_enqueue_style( 'docile-admin-style', get_template_directory_uri() . '/templatesell/about/about.css', array(), '' );
+		wp_enqueue_style( 'docile-admin-style', get_template_directory_uri() . '/templatesell/about/about.css', array(), DOCILE_VERSION );
  }
 } 
 add_action( 'admin_enqueue_scripts', 'docile_admin_scripts' );

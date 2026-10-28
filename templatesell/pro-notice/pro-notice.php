@@ -86,7 +86,7 @@ class Docile_Theme_Notice {
 	 */
 	public function enqueue_scripts() {
 
-		wp_enqueue_style( 'docile-notice', get_template_directory_uri() . '/templatesell/pro-notice/notice.css', array(), '4.5.0' );
+		wp_enqueue_style( 'docile-notice', get_template_directory_uri() . '/templatesell/pro-notice/notice.css', array(), DOCILE_VERSION );
 	}
 
 	/**
@@ -142,7 +142,7 @@ class Docile_Theme_Notice {
 					<span><?php esc_html_e( 'Upgrade To Pro', 'docile' ); ?></span>
 				</a>
 
-				<a href="?docile_nag_pro_theme_notice_partial_ignore=1" class="btn button-secondary">
+				<a href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'docile_nag_pro_theme_notice_partial_ignore', '1' ), 'docile_pro_notice', 'docile_pro_nonce' ) ); ?>" class="btn button-secondary">
 					<span class="dashicons dashicons-calendar-alt"></span>
 					<span><?php esc_html_e( 'Maybe later', 'docile' ); ?></span>
 				</a>
@@ -154,7 +154,7 @@ class Docile_Theme_Notice {
 				</a>
 			</div>
 
-			<a class="notice-dismiss" href="?docile_nag_pro_theme_notice_ignore=1"></a>
+			<a class="notice-dismiss" href="<?php echo esc_url( wp_nonce_url( add_query_arg( 'docile_nag_pro_theme_notice_ignore', '1' ), 'docile_pro_notice', 'docile_pro_nonce' ) ); ?>"><span class="screen-reader-text"><?php esc_html_e( 'Dismiss this notice.', 'docile' ); ?></span></a>
 		</div>
 
 		<?php
@@ -167,7 +167,15 @@ class Docile_Theme_Notice {
 
 		$user_id = $this->current_user_data->ID;
 
-		if ( isset( $_GET['docile_nag_pro_theme_notice_partial_ignore'] ) && '1' == $_GET['docile_nag_pro_theme_notice_partial_ignore'] ) {
+		if ( ! isset( $_GET['docile_nag_pro_theme_notice_partial_ignore'], $_GET['docile_pro_nonce'] ) ) {
+			return;
+		}
+
+		if ( ! wp_verify_nonce( sanitize_key( wp_unslash( $_GET['docile_pro_nonce'] ) ), 'docile_pro_notice' ) ) {
+			return;
+		}
+
+		if ( '1' === sanitize_key( wp_unslash( $_GET['docile_nag_pro_theme_notice_partial_ignore'] ) ) ) {
 			update_user_meta( $user_id, 'docile_nag_pro_theme_notice_partial_ignore', time() );
 		}
 
@@ -180,7 +188,15 @@ class Docile_Theme_Notice {
 
 		$user_id = $this->current_user_data->ID;
 
-		if ( isset( $_GET['docile_nag_pro_theme_notice_ignore'] ) && '1' == $_GET['docile_nag_pro_theme_notice_ignore'] ) {
+		if ( ! isset( $_GET['docile_nag_pro_theme_notice_ignore'], $_GET['docile_pro_nonce'] ) ) {
+			return;
+		}
+
+		if ( ! wp_verify_nonce( sanitize_key( wp_unslash( $_GET['docile_pro_nonce'] ) ), 'docile_pro_notice' ) ) {
+			return;
+		}
+
+		if ( '1' === sanitize_key( wp_unslash( $_GET['docile_nag_pro_theme_notice_ignore'] ) ) ) {
 			update_user_meta( $user_id, 'docile_nag_pro_theme_notice_ignore', time() );
 		}
 

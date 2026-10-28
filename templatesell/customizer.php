@@ -78,7 +78,11 @@ if ( !function_exists('docile_default_theme_options_values') ) :
             'docile-enable-sticky-sidebar' => 1,
 
             /*Footer Section*/
-            'docile-footer-copyright'  => esc_html__('Copyright All Rights Reserved 2021','docile'),
+            'docile-footer-copyright'  => sprintf(
+                /* translators: %s: the current year. */
+                esc_html__( 'Copyright All Rights Reserved %s', 'docile' ),
+                date_i18n( 'Y' )
+            ),
 
             /*Breadcrumb Options*/
             'docile-extra-breadcrumb' => 1,
@@ -186,7 +190,7 @@ function docile_customize_partial_blogdescription() {
  * Binds JS handlers to make Theme Customizer preview reload changes asynchronously.
  */
 function docile_customize_preview_js() {
-	wp_enqueue_script( 'docile-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), '20200412', true );
+	wp_enqueue_script( 'docile-customizer', get_template_directory_uri() . '/js/customizer.js', array( 'customize-preview' ), DOCILE_VERSION, true );
 }
 add_action( 'customize_preview_init', 'docile_customize_preview_js' );
 
@@ -194,6 +198,6 @@ add_action( 'customize_preview_init', 'docile_customize_preview_js' );
 ** Customizer Styles
 */
 function docile_panels_css() {
-     wp_enqueue_style('docile-customizer-css', get_template_directory_uri() . '/css/customizer-style.css', array(), '4.5.0');
+     wp_enqueue_style('docile-customizer-css', get_template_directory_uri() . '/css/customizer-style.css', array(), DOCILE_VERSION);
 }
 add_action( 'customize_controls_enqueue_scripts', 'docile_panels_css' );

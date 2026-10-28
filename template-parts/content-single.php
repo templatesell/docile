@@ -70,7 +70,14 @@ $image = absint($docile_theme_options['docile-single-page-featured-image']);
                 }
                 ?>
             </footer><!-- .entry-footer -->
-            <?php the_post_navigation(); ?>
+            <?php
+            the_post_navigation(
+                array(
+                    'prev_text' => '<span class="nav-label">' . esc_html__( 'Previous post', 'docile' ) . '</span><span class="nav-title">%title</span>',
+                    'next_text' => '<span class="nav-label">' . esc_html__( 'Next post', 'docile' ) . '</span><span class="nav-title">%title</span>',
+                )
+            );
+            ?>
             <div class="clearfix">
                 <?php 
                 /**

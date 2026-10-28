@@ -25,7 +25,7 @@ $trending_id = absint($docile_theme_options['docile-select-big-trending-category
           <div class="trending-news-inner">
                     <div class="title">
                         <i class="fa fa-bolt"></i>
-                        <strong><?php echo esc_html('Trending', 'docile'); ?></strong>
+                        <strong><?php esc_html_e( 'Trending', 'docile' ); ?></strong>
                     </div>
                     <div class="trending-news-slider">
                         <?php 

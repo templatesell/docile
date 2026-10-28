@@ -15,7 +15,9 @@
         });
         $(function() {
         $(".canvas-btn").on("click", function(e) {
+            e.preventDefault();
             $(".canvas-header").toggleClass("activate");
+            $(this).attr( 'aria-expanded', $(".canvas-header").hasClass("activate") ? 'true' : 'false' );
             var element = document.querySelector( '.offcanvas__wrapper' );
             var focusable = element.querySelectorAll( 'button, [href], input, select, textarea, [tabindex]:not([tabindex="-1"])');
             var firstFocusable = focusable[0];
@@ -27,9 +29,21 @@
             if ( $(e.target).parents().hasClass('offcanvas__block') ) {
                 $(".canvas-header").addClass("activate");
             } else {
-                $(".canvas-header").removeClass("activate");
-                var focusClass = $(".canvas-header.close-btn").data( 'focus' );
-                $( '.' + focusClass ).find( 'a' ).focus();
+                closePanel();
+            }
+        });
+
+        function closePanel() {
+            $(".canvas-header").removeClass("activate");
+            $(".canvas-btn").attr( 'aria-expanded', 'false' );
+            var focusClass = $(".canvas-header.close-btn").data( 'focus' );
+            $( '.' + focusClass ).focus();
+        }
+
+        // Escape has to close the panel, or the focus trap has no exit.
+        $(document).on('keydown', function(e) {
+            if ( ( e.key === 'Escape' || e.keyCode === 27 ) && $(".canvas-header").hasClass("activate") ) {
+                closePanel();
             }
         });
     });

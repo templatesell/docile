@@ -1,0 +1,1280 @@
+# Copyright (C) 2026 templatesell
+# This file is distributed under the GNU General Public License v2 or later.
+msgid ""
+msgstr ""
+"Project-Id-Version: Docile 1.1.3\n"
+"Report-Msgid-Bugs-To: https://wordpress.org/support/theme/docile\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"POT-Creation-Date: 2026-08-21T12:22:11+00:00\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"X-Generator: WP-CLI 2.12.0\n"
+"X-Domain: docile\n"
+
+#. Theme Name of the theme
+#: style.css
+#: inc/block-patterns.php:30
+msgid "Docile"
+msgstr ""
+
+#. Theme URI of the theme
+#: style.css
+msgid "https://www.templatesell.com/item/docile"
+msgstr ""
+
+#. Description of the theme
+#: style.css
+msgid "Docile is a elegant and easy to use WordPress magazine theme. It comes with 10+ custom widgets, customizer based theme settings, powerful theme options and many more. This theme has search option, off-canvas sidebar, multiple sidebar options, footer options, featured slider, promo boxed, footer widgets and many more. Besides that, this theme comes with added custom widgets for trending news, post grid, slider and many more.It comes with primary color option to change the whole site color with a single click. More Details: https://www.templatesell.com/item/docile"
+msgstr ""
+
+#. Author of the theme
+#: style.css
+msgid "templatesell"
+msgstr ""
+
+#. Author URI of the theme
+#: style.css
+msgid "https://www.templatesell.com/"
+msgstr ""
+
+#: 404.php:18
+msgid "404"
+msgstr ""
+
+#: 404.php:19
+msgid "Oops! That page can&rsquo;t be found."
+msgstr ""
+
+#: 404.php:20
+msgid "It looks like nothing was found at this location. Maybe try one of the links below or a search?"
+msgstr ""
+
+#: 404.php:23
+msgid "Back to Home"
+msgstr ""
+
+#. translators: 1: title.
+#: comments.php:35
+#, php-format
+msgid "One thought on &ldquo;%1$s&rdquo;"
+msgstr ""
+
+#. translators: 1: comment count number, 2: title.
+#: comments.php:41
+#, php-format
+msgctxt "comments title"
+msgid "%1$s thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] ""
+msgstr[1] ""
+
+#: comments.php:66
+msgid "Comments are closed."
+msgstr ""
+
+#. translators: 1: Theme name, 2: Theme author.
+#: footer.php:89
+#, php-format
+msgid "Theme: %1$s by %2$s."
+msgstr ""
+
+#: functions.php:60
+msgid "Primary"
+msgstr ""
+
+#: functions.php:61
+msgid "Top Menu"
+msgstr ""
+
+#: functions.php:62
+msgid "Footer Menu"
+msgstr ""
+
+#: functions.php:63
+msgid "Social Icons"
+msgstr ""
+
+#: functions.php:122
+msgid "Small"
+msgstr ""
+
+#: functions.php:123
+msgid "S"
+msgstr ""
+
+#: functions.php:128
+msgid "Medium"
+msgstr ""
+
+#: functions.php:129
+msgid "M"
+msgstr ""
+
+#: functions.php:134
+msgid "Large"
+msgstr ""
+
+#: functions.php:135
+msgid "L"
+msgstr ""
+
+#: functions.php:140
+msgid "Larger"
+msgstr ""
+
+#: functions.php:141
+msgid "XL"
+msgstr ""
+
+#: functions.php:184
+msgid "Sidebar"
+msgstr ""
+
+#: functions.php:186
+#: functions.php:196
+#: functions.php:216
+#: functions.php:226
+#: functions.php:236
+#: functions.php:246
+#: functions.php:256
+#: functions.php:266
+msgid "Add widgets here."
+msgstr ""
+
+#: functions.php:194
+msgid "Front Page Widget Area"
+msgstr ""
+
+#: functions.php:204
+#: templatesell/customizer.php:157
+msgid "Widget Area Below Slider"
+msgstr ""
+
+#: functions.php:206
+msgid "You can add Mailchimp widget or other widgets here."
+msgstr ""
+
+#: functions.php:214
+#: templatesell/customizer.php:165
+msgid "Widget Area Before Footer"
+msgstr ""
+
+#: functions.php:224
+msgid "Footer One"
+msgstr ""
+
+#: functions.php:234
+msgid "Footer Two"
+msgstr ""
+
+#: functions.php:244
+msgid "Footer Three"
+msgstr ""
+
+#: functions.php:254
+msgid "Footer Four"
+msgstr ""
+
+#: functions.php:264
+msgid "Offcanvas"
+msgstr ""
+
+#: header.php:43
+msgid "Skip to content"
+msgstr ""
+
+#: inc/block-patterns.php:37
+msgid "Lead story"
+msgstr ""
+
+#: inc/block-patterns.php:41
+msgid "The story everyone is reading"
+msgstr ""
+
+#: inc/block-patterns.php:44
+msgid "Open with the single sentence a reader needs before they decide whether to carry on. Keep it short, concrete, and free of throat-clearing."
+msgstr ""
+
+#: inc/block-patterns.php:48
+msgid "Read the full report"
+msgstr ""
+
+#: inc/block-patterns.php:57
+msgid "Three column briefing"
+msgstr ""
+
+#: inc/block-patterns.php:61
+msgid "What happened"
+msgstr ""
+
+#: inc/block-patterns.php:62
+msgid "The facts, in the order a reader needs them."
+msgstr ""
+
+#: inc/block-patterns.php:65
+msgid "Why it matters"
+msgstr ""
+
+#: inc/block-patterns.php:66
+msgid "The consequence that makes the story worth the reader's time."
+msgstr ""
+
+#: inc/block-patterns.php:69
+msgid "What comes next"
+msgstr ""
+
+#: inc/block-patterns.php:70
+msgid "The date, decision, or number to watch for."
+msgstr ""
+
+#: inc/block-patterns.php:79
+msgid "Pull quote break"
+msgstr ""
+
+#: inc/block-patterns.php:84
+msgid "Lift the one line from the piece that a reader would repeat to someone else."
+msgstr ""
+
+#: inc/block-patterns.php:86
+msgid "Name, role"
+msgstr ""
+
+#: inc/block-patterns.php:111
+msgid "Statement"
+msgstr ""
+
+#: inc/block-patterns.php:119
+msgid "Framed"
+msgstr ""
+
+#: inc/block-patterns.php:127
+msgid "Checklist"
+msgstr ""
+
+#. translators: %s: search query.
+#: search.php:20
+#, php-format
+msgid "Search Results for: %s"
+msgstr ""
+
+#: template-parts/content-none.php:12
+msgid "Nothing Found"
+msgstr ""
+
+#. translators: 1: link to WP admin new post page.
+#: template-parts/content-none.php:19
+#, php-format
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr ""
+
+#: template-parts/content-none.php:32
+msgid "Sorry, but nothing matched your search terms. Please try again with some different keywords."
+msgstr ""
+
+#: template-parts/content-none.php:39
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr ""
+
+#: template-parts/content-page.php:29
+#: template-parts/content-single.php:60
+#: template-parts/content.php:74
+msgid "Pages:"
+msgstr ""
+
+#. translators: %s: Name of current post. Only visible to screen readers
+#: template-parts/content-single.php:49
+#, php-format
+msgid "Continue reading<span class=\"screen-reader-text\"> \"%s\"</span>"
+msgstr ""
+
+#: template-parts/content-single.php:76
+msgid "Previous post"
+msgstr ""
+
+#: template-parts/content-single.php:77
+msgid "Next post"
+msgstr ""
+
+#: template-parts/sections/header-section.php:47
+msgid "l, F d, Y"
+msgstr ""
+
+#: template-parts/sections/header-section.php:140
+msgid "Open sidebar panel"
+msgstr ""
+
+#: template-parts/sections/header-section.php:147
+msgid "Close sidebar panel"
+msgstr ""
+
+#: template-parts/sections/header-section.php:159
+msgid "Most Used Categories"
+msgstr ""
+
+#: template-parts/sections/trending-section.php:27
+#: template-parts/sections/trending-two.php:28
+msgid "Trending"
+msgstr ""
+
+#: templatesell/about/about.php:10
+msgid "Docile Options"
+msgstr ""
+
+#: templatesell/about/about.php:34
+msgid "Upgrade Pro $59"
+msgstr ""
+
+#: templatesell/about/about.php:36
+msgid "A perfect theme for news and magazine site. With masonry layout and multiple blog page layout, this theme is the awesome and minimal theme."
+msgstr ""
+
+#: templatesell/about/about.php:38
+msgid "Theme Options - Click Here"
+msgstr ""
+
+#: templatesell/about/about.php:44
+msgid "Looking for theme Documentation?"
+msgstr ""
+
+#: templatesell/about/about.php:46
+msgid "Documentation - Click Here"
+msgstr ""
+
+#: templatesell/about/about.php:52
+msgid "If you like the theme, please leave a review"
+msgstr ""
+
+#: templatesell/about/about.php:54
+msgid "Rate this theme"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:310
+msgid "Browse:"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:311
+msgctxt "breadcrumbs aria label"
+msgid "Breadcrumbs"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:312
+msgid "Home"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:313
+msgid "404 Not Found"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:314
+msgid "Archives"
+msgstr ""
+
+#. Translators: %s is the search query.
+#: templatesell/breadcrumbs/breadcrumbs.php:316
+#, php-format
+msgid "Search results for: %s"
+msgstr ""
+
+#. Translators: %s is the page number.
+#: templatesell/breadcrumbs/breadcrumbs.php:318
+#, php-format
+msgid "Page %s"
+msgstr ""
+
+#. Translators: %s is the page number.
+#: templatesell/breadcrumbs/breadcrumbs.php:320
+#, php-format
+msgid "Comment Page %s"
+msgstr ""
+
+#. Translators: Minute archive title. %s is the minute time format.
+#: templatesell/breadcrumbs/breadcrumbs.php:322
+#, php-format
+msgid "Minute %s"
+msgstr ""
+
+#. Translators: Weekly archive title. %s is the week date format.
+#: templatesell/breadcrumbs/breadcrumbs.php:324
+#, php-format
+msgid "Week %s"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:784
+msgctxt "minute and hour archives time format"
+msgid "g:i a"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:801
+msgctxt "minute archives time format"
+msgid "i"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:818
+msgctxt "hour archives time format"
+msgid "g a"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:834
+#: templatesell/breadcrumbs/breadcrumbs.php:863
+#: templatesell/breadcrumbs/breadcrumbs.php:890
+#: templatesell/breadcrumbs/breadcrumbs.php:917
+#: templatesell/breadcrumbs/breadcrumbs.php:1257
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:835
+#: templatesell/breadcrumbs/breadcrumbs.php:891
+#: templatesell/breadcrumbs/breadcrumbs.php:1261
+msgctxt "monthly archives date format"
+msgid "F"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:836
+#: templatesell/breadcrumbs/breadcrumbs.php:1265
+msgctxt "daily archives date format"
+msgid "j"
+msgstr ""
+
+#: templatesell/breadcrumbs/breadcrumbs.php:864
+msgctxt "weekly archives date format"
+msgid "W"
+msgstr ""
+
+#: templatesell/customizer-category-control.php:22
+msgid "&mdash; Select Category &mdash;"
+msgstr ""
+
+#: templatesell/customizer.php:46
+msgid "Today Highlights"
+msgstr ""
+
+#: templatesell/customizer.php:49
+#: templatesell/theme-settings/front-page-options.php:15
+msgid "Grid Posts Slider"
+msgstr ""
+
+#: templatesell/customizer.php:52
+msgid "You May Have Missed"
+msgstr ""
+
+#: templatesell/customizer.php:73
+#: templatesell/theme-settings/single-page-options.php:60
+msgid "Related Posts"
+msgstr ""
+
+#. translators: %s: the current year.
+#: templatesell/customizer.php:83
+#, php-format
+msgid "Copyright All Rights Reserved %s"
+msgstr ""
+
+#: templatesell/customizer.php:150
+msgid "Front Page Widgets"
+msgstr ""
+
+#: templatesell/enqueue.php:61
+msgid "View More"
+msgstr ""
+
+#: templatesell/enqueue.php:62
+msgid "No More"
+msgstr ""
+
+#: templatesell/filters/widget-counts.php:37
+msgid "Posts:"
+msgstr ""
+
+#: templatesell/hooks/footer.php:13
+msgid "Go to Top"
+msgstr ""
+
+#: templatesell/pro-notice/pro-notice.php:123
+msgid "upgrade to pro"
+msgstr ""
+
+#. Translators: %1$s current user display name., %2$s Currently activated theme., %3$s Pro theme link., %4$s Coupon code.
+#: templatesell/pro-notice/pro-notice.php:126
+#, php-format
+msgid "Howdy, %1$s! You've been using %2$s theme for a while now, and we hope you're happy with it. If you need more options and access to the premium features, you can %3$s. Also, you can use the coupon code %4$s to get 20 percent discount while making the purchase. Enjoy!"
+msgstr ""
+
+#: templatesell/pro-notice/pro-notice.php:142
+msgid "Upgrade To Pro"
+msgstr ""
+
+#: templatesell/pro-notice/pro-notice.php:147
+msgid "Maybe later"
+msgstr ""
+
+#: templatesell/pro-notice/pro-notice.php:153
+msgid "Rate Us"
+msgstr ""
+
+#: templatesell/pro-notice/pro-notice.php:157
+msgid "Dismiss this notice."
+msgstr ""
+
+#. translators: used between list items, there is a space after the comma
+#: templatesell/template-tags.php:52
+#: templatesell/template-tags.php:59
+msgid ", "
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:7
+msgid "Blog Settings"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:23
+msgid "Blog and Archive Sidebar"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:24
+msgid "This sidebar will work blog and archive pages."
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:41
+msgid "Show from Excerpt"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:42
+msgid "Show from Content"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:44
+msgid "Select Content Display From"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:45
+msgid "You can enable excerpt from Screen Options inside post section of dashboard"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:63
+#: templatesell/widgets/ts-featured-post-slider-widget.php:171
+#: templatesell/widgets/ts-post-column-widget.php:210
+#: templatesell/widgets/ts-post-grid-widget.php:176
+msgid "Excerpt Length"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:64
+msgid "Enter the number per Words to show the content in blog page."
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:80
+msgid "Exclude categories in Blog Listing"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:81
+msgid "Enter categories ids with comma separated eg: 2,7,14,47."
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:99
+msgid "Numeric Pagination"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:100
+msgid "Previous and Next Pagination"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:102
+msgid "Pagination Types"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:103
+msgid "Choose Required Pagination Type"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:119
+msgid "Read More Text"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:120
+msgid "Read more text for blog and archive page."
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:137
+msgid "Show Social Share"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:138
+msgid "Options to Enable Social Share in blog and archive page."
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:154
+msgid "Show Category"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:155
+msgid "Option to hide the category on the blog page."
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:170
+msgid "Show Date"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:171
+msgid "Option to hide the date on the blog page."
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:186
+msgid "Show Author"
+msgstr ""
+
+#: templatesell/theme-settings/blog-page-options.php:187
+msgid "Option to hide the author on the blog page."
+msgstr ""
+
+#: templatesell/theme-settings/boxes-options.php:10
+msgid "Highlights News"
+msgstr ""
+
+#: templatesell/theme-settings/boxes-options.php:37
+msgid "Enable Highlights"
+msgstr ""
+
+#: templatesell/theme-settings/boxes-options.php:38
+msgid "Enable and select the category to show the boxes below slider."
+msgstr ""
+
+#: templatesell/theme-settings/boxes-options.php:55
+msgid "Title of Highlights"
+msgstr ""
+
+#: templatesell/theme-settings/boxes-options.php:56
+msgid "Enter the suitable title for the highlights."
+msgstr ""
+
+#: templatesell/theme-settings/boxes-options.php:79
+msgid "Category For Highlights"
+msgstr ""
+
+#: templatesell/theme-settings/boxes-options.php:80
+msgid "From the dropdown select the category for the Highlights. Category having post will display in Highlights section."
+msgstr ""
+
+#: templatesell/theme-settings/breadcrumb-options.php:8
+msgid "Breadcrumb Settings"
+msgstr ""
+
+#: templatesell/theme-settings/breadcrumb-options.php:21
+msgid "Enable Breadcrumb"
+msgstr ""
+
+#: templatesell/theme-settings/breadcrumb-options.php:22
+msgid "Breadcrumb will appear on all pages except home page. More settings will be on the premium version."
+msgstr ""
+
+#: templatesell/theme-settings/color-options.php:14
+msgid "Primary Color"
+msgstr ""
+
+#: templatesell/theme-settings/color-options.php:15
+msgid "Change your whole site color from here. More are available in premium version."
+msgstr ""
+
+#: templatesell/theme-settings/footer-options.php:7
+msgid "Footer Settings"
+msgstr ""
+
+#: templatesell/theme-settings/footer-options.php:21
+msgid "Copyright Text"
+msgstr ""
+
+#: templatesell/theme-settings/footer-options.php:22
+msgid "Enter your own copyright text."
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:8
+msgid "Docile Front Page Options"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:28
+msgid "Enable Grid Post Slider"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:29
+msgid "Posts of the selected category will appear as a slider."
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:60
+msgid "Title Grid Post Slider"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:61
+#: templatesell/theme-settings/front-page-options.php:146
+msgid "Enter the title for this section."
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:84
+msgid "Category For Grid Slider"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:85
+msgid "From the dropdown select the category for the grid slider. Category having post will display in grid section."
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:100
+msgid "You May Missed"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:113
+msgid "Enable You May Missed"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:114
+msgid "This section will appear on the footer section."
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:145
+msgid "Title You May Missed"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:169
+msgid "Category For Missed Section"
+msgstr ""
+
+#: templatesell/theme-settings/front-page-options.php:170
+msgid "From the dropdown select the category for the you may missed. Category having post will display in missed section."
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:9
+msgid "Header Settings"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:23
+msgid "Enable Search"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:24
+msgid "It will help to display the search in Menu."
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:42
+msgid "Enable Offcanvas Sidebar"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:43
+msgid "It will help to display the Offcanvas sidebar in Menu."
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:60
+msgid "Enable Header Advertisement"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:61
+msgid "You can add the header ads image after enabling it."
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:93
+msgid "Header Ad Image"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:99
+msgid "Recommended image size of 728*90"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:111
+msgid "Header Ads Image Link"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:129
+msgid "Slide Trending"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:130
+msgid "One Per Slide Trending"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:131
+msgid "Hide Trending"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:133
+msgid "Enable Trending News Below Menu"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:134
+msgid "You can enable the trending news from the category or recent posts."
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:169
+msgid "Select Category For Trending"
+msgstr ""
+
+#: templatesell/theme-settings/header-options.php:170
+msgid "Choose one category to show the trending. More settings are in pro version."
+msgstr ""
+
+#: templatesell/theme-settings/logo-options.php:10
+msgid "Logo Width"
+msgstr ""
+
+#: templatesell/theme-settings/logo-options.php:11
+msgid "Adjust the logo width. Minimum is 100px and maximum is 600px."
+msgstr ""
+
+#: templatesell/theme-settings/logo-options.php:32
+msgid "Center Logo"
+msgstr ""
+
+#: templatesell/theme-settings/logo-options.php:33
+msgid "Left Logo"
+msgstr ""
+
+#: templatesell/theme-settings/logo-options.php:35
+msgid "Logo Position in Header"
+msgstr ""
+
+#: templatesell/theme-settings/logo-options.php:36
+msgid "Logo Position in the header, left or in center."
+msgstr ""
+
+#: templatesell/theme-settings/miscellaneous-options.php:8
+msgid "Miscellaneous Settings"
+msgstr ""
+
+#: templatesell/theme-settings/miscellaneous-options.php:21
+msgid "Enable Front Page Content"
+msgstr ""
+
+#: templatesell/theme-settings/miscellaneous-options.php:22
+msgid "This will help to hide the content in Front Page, blog and home page content."
+msgstr ""
+
+#: templatesell/theme-settings/miscellaneous-options.php:38
+msgid "Enable Preloader"
+msgstr ""
+
+#: templatesell/theme-settings/miscellaneous-options.php:39
+msgid "Hide the preloader. It loads before the site loads."
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:9
+msgid "Single Page Settings"
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:22
+msgid "Enable Featured Image on Single Posts"
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:23
+msgid "You can hide images on single post from here."
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:43
+msgid "Select Sidebar"
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:44
+msgid "From Appearance > Customize > Widgets and add the widgets on the respected widget areas."
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:61
+msgid "2 posts of same category will appear."
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:92
+msgid "Related Posts Title"
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:93
+msgid "Enter the suitable title."
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:110
+msgid "Social Sharing"
+msgstr ""
+
+#: templatesell/theme-settings/single-page-options.php:111
+msgid "Enable Social Sharing on Single Posts."
+msgstr ""
+
+#: templatesell/theme-settings/slider-options.php:8
+msgid "Featured Slider Settings"
+msgstr ""
+
+#: templatesell/theme-settings/slider-options.php:37
+msgid "Enable Featured Section"
+msgstr ""
+
+#: templatesell/theme-settings/slider-options.php:38
+msgid "You can select the category for the slider and other settings below. More Options are available on premium version."
+msgstr ""
+
+#: templatesell/theme-settings/slider-options.php:60
+msgid "Select Category For Slider"
+msgstr ""
+
+#: templatesell/theme-settings/slider-options.php:61
+msgid "Choose one category to show the slider. More settings are in pro version."
+msgstr ""
+
+#: templatesell/theme-settings/slider-options.php:86
+msgid "Select Category For Slider Right"
+msgstr ""
+
+#: templatesell/theme-settings/slider-options.php:87
+msgid "The foru post of same category will be displayed right to the slider. More options are in premium version."
+msgstr ""
+
+#: templatesell/theme-settings/sticky-sidebar-options.php:7
+msgid "Sticky Sidebar Settings"
+msgstr ""
+
+#: templatesell/theme-settings/sticky-sidebar-options.php:20
+msgid "Enable Sticky Sidebar"
+msgstr ""
+
+#: templatesell/theme-settings/sticky-sidebar-options.php:21
+msgid "Enable and Disable sticky sidebar from this section."
+msgstr ""
+
+#: templatesell/theme-settings/theme-settings.php:6
+msgid "Docile Theme Options"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:8
+msgid "Top Header"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:35
+msgid "Enable Top Header"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:36
+msgid "Checked to show the top header section like search and social icons"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:52
+msgid "Enable Social Icons"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:53
+msgid "You can show the social icons here. Manage social icons from Appearance > Menus. Social Menu will display here."
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:70
+msgid "Menu in Header"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:71
+msgid "Top Header menu will display here."
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:88
+msgid "Date in Header"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:89
+msgid "Top Header date will display here."
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:109
+msgid "Enable Header Image Overlay Color Height"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:110
+msgid "This option will add colors over the header image."
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:140
+msgid "Header Image Min Height"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:141
+msgid "Adjust the header image min height height. Minimum is 50px and maximum is 500px."
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:165
+msgid "Header Image Overlay Color"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:166
+msgid "It will add the color overlay of the Header image. To make it transparent, use the below option."
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:182
+msgid "Header Image Overlay Color Transparent"
+msgstr ""
+
+#: templatesell/theme-settings/top-header-options.php:183
+msgid "You can make the overlay transparent using this option. Add range from 0.1 to 1."
+msgstr ""
+
+#: templatesell/upgrade/class-customize.php:76
+msgid "Upgrade to Pro and Get More Features"
+msgstr ""
+
+#: templatesell/upgrade/class-customize.php:78
+msgid "Get Free Support"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:20
+#: templatesell/widgets/ts-social-widget.php:18
+msgid "Follow Us"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:21
+msgid "Author Description goes here."
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:44
+msgid "Display Author Profile."
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:46
+msgid "Docile Author"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:116
+msgid "facebook"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:123
+msgid "twitter"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:130
+msgid "linkedin"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:137
+msgid "instagram"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:144
+msgid "pinterest"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:151
+msgid "youtube"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:158
+msgid "vk"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:242
+#: templatesell/widgets/ts-featured-post-slider-widget.php:138
+#: templatesell/widgets/ts-featured-post-widget.php:189
+#: templatesell/widgets/ts-latest-post-widget.php:189
+#: templatesell/widgets/ts-post-column-widget.php:177
+#: templatesell/widgets/ts-post-grid-widget.php:143
+#: templatesell/widgets/ts-post-slider-widget.php:119
+#: templatesell/widgets/ts-recent-posts-widget.php:119
+#: templatesell/widgets/ts-social-widget.php:80
+msgid "Title:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:250
+msgid "Description:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:258
+msgid "Select Image: Recommended size 250*250"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:276
+msgid "Upload Image"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:281
+msgid "Facebook:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:290
+msgid "Twitter:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:299
+msgid "LinkedIn:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:308
+msgid "Instagram:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:317
+msgid "Pinterest:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:326
+msgid "Youtube:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:335
+msgid "VK:"
+msgstr ""
+
+#: templatesell/widgets/ts-author-widget.php:344
+msgid "Author Sign Text:"
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-slider-widget.php:20
+msgid "Featured Posts Slider"
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-slider-widget.php:32
+#: templatesell/widgets/ts-featured-post-widget.php:31
+#: templatesell/widgets/ts-post-grid-widget.php:32
+msgid "Display post in Grid Form. Suitable on Sidebars."
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-slider-widget.php:35
+msgid "Docile Featured Post Slider"
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-slider-widget.php:145
+#: templatesell/widgets/ts-featured-post-widget.php:196
+#: templatesell/widgets/ts-latest-post-widget.php:196
+#: templatesell/widgets/ts-post-column-widget.php:184
+#: templatesell/widgets/ts-post-grid-widget.php:150
+#: templatesell/widgets/ts-post-slider-widget.php:126
+#: templatesell/widgets/ts-recent-posts-widget.php:126
+msgid "Select Category: "
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-slider-widget.php:156
+#: templatesell/widgets/ts-featured-post-widget.php:207
+#: templatesell/widgets/ts-latest-post-widget.php:207
+#: templatesell/widgets/ts-post-column-widget.php:195
+#: templatesell/widgets/ts-post-grid-widget.php:161
+#: templatesell/widgets/ts-post-slider-widget.php:137
+#: templatesell/widgets/ts-recent-posts-widget.php:137
+msgid "Show Recent Posts"
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-slider-widget.php:164
+#: templatesell/widgets/ts-featured-post-widget.php:215
+#: templatesell/widgets/ts-latest-post-widget.php:215
+#: templatesell/widgets/ts-post-column-widget.php:203
+#: templatesell/widgets/ts-post-grid-widget.php:169
+#: templatesell/widgets/ts-post-slider-widget.php:145
+#: templatesell/widgets/ts-recent-posts-widget.php:145
+#: templatesell/widgets/ts-tabbed-widget.php:268
+msgid "Number of Posts to Display:"
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-widget.php:20
+msgid "Featured Posts Content"
+msgstr ""
+
+#: templatesell/widgets/ts-featured-post-widget.php:34
+msgid "Docile Featured Post Content"
+msgstr ""
+
+#: templatesell/widgets/ts-latest-post-widget.php:20
+msgid "Latest Posts"
+msgstr ""
+
+#: templatesell/widgets/ts-latest-post-widget.php:31
+msgid "Display lastest post and from category."
+msgstr ""
+
+#: templatesell/widgets/ts-latest-post-widget.php:34
+msgid "Docile Latest Posts"
+msgstr ""
+
+#: templatesell/widgets/ts-post-column-widget.php:20
+msgid "Post Column"
+msgstr ""
+
+#: templatesell/widgets/ts-post-column-widget.php:32
+msgid "Display post in Column Form. Suitable on home page widget."
+msgstr ""
+
+#: templatesell/widgets/ts-post-column-widget.php:35
+msgid "Docile Post Column"
+msgstr ""
+
+#: templatesell/widgets/ts-post-column-widget.php:106
+#: templatesell/widgets/ts-post-column-widget.php:138
+msgid "Read More"
+msgstr ""
+
+#: templatesell/widgets/ts-post-grid-widget.php:20
+msgid "Grid Posts"
+msgstr ""
+
+#: templatesell/widgets/ts-post-grid-widget.php:35
+msgid "Docile Post Grid"
+msgstr ""
+
+#: templatesell/widgets/ts-post-slider-widget.php:20
+msgid "Slide Posts"
+msgstr ""
+
+#: templatesell/widgets/ts-post-slider-widget.php:31
+msgid "Display post in Slider Form. Suitable on Sidebars."
+msgstr ""
+
+#: templatesell/widgets/ts-post-slider-widget.php:34
+msgid "Docile Post Slider"
+msgstr ""
+
+#: templatesell/widgets/ts-recent-posts-widget.php:19
+msgid "Recent Posts"
+msgstr ""
+
+#: templatesell/widgets/ts-recent-posts-widget.php:31
+msgid "Displays Featured Post in Sidebars. Place it in Sidebar Widget Area."
+msgstr ""
+
+#: templatesell/widgets/ts-recent-posts-widget.php:34
+msgid "Docile Recent Post Sidebar"
+msgstr ""
+
+#: templatesell/widgets/ts-social-widget.php:30
+msgid "Social Menu Widget"
+msgstr ""
+
+#: templatesell/widgets/ts-social-widget.php:32
+msgid "Docile Social"
+msgstr ""
+
+#: templatesell/widgets/ts-social-widget.php:88
+msgid "Go to Appearance > Customize > Menus and create a menu and assign to Social."
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:19
+msgid "Recent Post"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:20
+msgid "Popular"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:21
+msgid "Recent"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:22
+msgid "Random"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:32
+msgid "It will help to display the popular and Recent Post Via Tabbed. Suitable on Sidebars."
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:35
+msgid "Docile Tabbed"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:240
+msgid "Widget Title:"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:247
+msgid "Popular Title:"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:254
+msgid "Recent Title:"
+msgstr ""
+
+#: templatesell/widgets/ts-tabbed-widget.php:261
+msgid "Commented Title:"
+msgstr ""

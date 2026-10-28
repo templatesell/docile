@@ -85,10 +85,8 @@ h6,
 
 /* tags */
 button {
-    -webkit-transition: color 0.2s ease, background 0.2s ease;
-    -moz-transition: color 0.2s ease, background 0.2s ease;
-    -o-transition: color 0.2s ease, background 0.2s ease;
-    transition: color 0.2s ease, background 0.2s ease;
+    -webkit-transition: color 200ms ease, background 200ms ease;
+    transition: color 200ms ease, background 200ms ease;
 }
 p {
     margin: 0 0 15px;
@@ -400,7 +398,7 @@ th {
 
 .screen-reader-text:focus {
     background-color: #f1f1f1;
-    border-radius: 3px;
+    border-radius: 6px;
     box-shadow: 0 0 2px 2px rgba(0, 0, 0, 0.6);
     clip: auto !important;
     clip-path: none;
@@ -615,7 +613,7 @@ th {
   right: calc(50% - 128px);
   width: 256px;
   height: 64px;
-  border-radius: 3px;
+  border-radius: 6px;
   background-color: RGBA(100,100,100,.8);
   box-shadow: 0 0 32px 0 #111;
   padding: 30px;
@@ -675,7 +673,7 @@ th {
 .trending-news .trending-news-inner .title {
     float: right;
     padding: 10px 15px;
-    background: #f92a28;
+    background: #d42929;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -713,8 +711,8 @@ th {
     border: 1px solid #eee;
     background: #fff;
     overflow: hidden;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 300ms;
+    transition: 300ms;
     top: 3px;
     z-index: 1;
 }
@@ -899,7 +897,7 @@ th {
     font-family: FontAwesome, sans-serif;
     font-size: 14px;
     padding: 0;
-    transition: color 0.3s ease-in-out 0s;
+    transition: color 300ms ease-in-out 0s;
     vertical-align: middle;
     line-height: 12px;
     color: #68686d;
@@ -1100,16 +1098,12 @@ th {
     justify-content: space-between;
     cursor: pointer;
 
-    -webkit-transition: transform 330ms ease-out;
-    -moz-transition: transform 330ms ease-out;
-    -o-transition: transform 330ms ease-out;
-    transition: transform 330ms ease-out;
+    -webkit-transition: transform 300ms ease-out;
+    transition: transform 300ms ease-out;
 }
 
 .header-default .bar-menu.menu-open {
     -webkit-transform: rotate(45deg);
-    -moz-transform: rotate(45deg);
-    -o-transform: rotate(45deg);
     transform: rotate(45deg);
 }
 
@@ -1125,27 +1119,23 @@ th {
 }
 
 .header-default .line-menu.first-line {
-    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transition: transform 300ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
     transform-origin: left;
 }
 
 .header-default .menu-open .line-menu.first-line {
     -webkit-transform: rotate(90deg) translateX(-3px);
-    -moz-transform: rotate(90deg) translateX(-3px);
-    -o-transform: rotate(90deg) translateX(-3px);
     transform: rotate(90deg) translateX(-3px);
 }
 
 .header-default .line-menu.last-line {
     align-self: flex-end;
-    transition: transform 330ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
+    transition: transform 300ms cubic-bezier(0.54, -0.81, 0.57, 0.57);
     transform-origin: right;
 }
 
 .header-default .menu-open .line-menu.last-line {
     -webkit-transform: rotate(90deg) translateX(3px);
-    -moz-transform: rotate(90deg) translateX(3px);
-    -o-transform: rotate(90deg) translateX(3px);
     transform: rotate(90deg) translateX(3px);
 }
 .menu-area{
@@ -1171,10 +1161,8 @@ th {
     color: #212121;
     padding: 14px 15px;
     text-decoration: none;
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
-    transition: all 0.2s ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 
 .main-menu ul li.current-menu-item > a,
@@ -1227,8 +1215,6 @@ th {
 
 .dropdown-plus:after {
     -webkit-transform: rotate(-90deg);
-    -moz-transform: rotate(-90deg);
-    -o-transform: rotate(-90deg);
     transform: rotate(-90deg);
 }
 
@@ -1333,7 +1319,7 @@ th {
         padding: 15px 15px;
         font-size: 24px;
         margin-left: 15px;
-        background: #f92a28;
+        background: #d42929;
         color: #fff;
     }
     .docile-home-icon a:hover i{
@@ -1345,7 +1331,7 @@ th {
         position: absolute;
         top: 2px;
         font-size: 9px;
-        background: #f92a28;
+        background: #d42929;
         line-height: 12px;
         padding: 2px 5px;
         left: -10px;
@@ -1359,7 +1345,7 @@ th {
         right: 20%;
         border-width: 0 4px 4px 0;
         border-style: solid;
-        border-color: transparent #f92a28;
+        border-color: transparent #d42929;
     }
     .main-menu > ul {
         display: block !important;
@@ -1409,8 +1395,6 @@ th {
         margin-right: 8px;
         box-sizing: content-box;
         -webkit-transform: rotate(-135deg);
-        -moz-transform: rotate(-135deg);
-        -o-transform: rotate(-135deg);
         transform: rotate(-135deg);
     }
     .main-menu ul li.dropdown_menu > ul a span:before{
@@ -1432,10 +1416,8 @@ th {
         -o-box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
         box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
 
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
     }
     .main-menu li:focus-within > ul,
     .main-menu li:focus > ul,
@@ -1460,8 +1442,6 @@ th {
         left: -10px;
         margin: 0;
         -webkit-transform: rotate(-45deg);
-        -moz-transform: rotate(-45deg);
-        -o-transform: rotate(-45deg);
         transform: rotate(-45deg);
     }
     .main-menu ul ul li > a {
@@ -1488,10 +1468,8 @@ th {
         height: 1px;
         background: #a1a1a1;
 
-        -webkit-transition: all 0.2s ease-in-out;
-        -moz-transition: all 0.2s ease-in-out;
-        -o-transition: all 0.2s ease-in-out;
-        transition: all 0.2s ease-in-out;
+        -webkit-transition: all 200ms ease-in-out;
+        transition: all 200ms ease-in-out;
     }
     .main-menu ul ul li:hover > a:before {
         width: 10px;
@@ -1517,8 +1495,6 @@ th {
         height: 20px;
         background: #eeeeee;
         -webkit-transform: translateY(-50%);
-        -moz-transform: translateY(-50%);
-        -o-transform: translateY(-50%);
         transform: translateY(-50%);
     }
     .main-menu.separate-line > ul > li:last-child > a:before {
@@ -1535,11 +1511,8 @@ th {
     Header sticky
     ================================================ */
     .main-header{
-        -webkit-transition: all 0.5s ease;
-        -moz-transition: position 10s;
-        -ms-transition: position 10s;
-        -o-transition: position 10s;
-        transition: all 0.5s ease;
+        -webkit-transition: all 500ms ease;
+        transition: all 500ms ease;
     }
     .main-header.sticky {
         top: 0;
@@ -1608,14 +1581,10 @@ th {
     Submenu transitions
     ================================================ */
     .main-menu.submenu-flip li > ul {
-        -webkit-transition: all 0.35s ease-in-out;
-        -moz-transition: all 0.35s ease-in-out;
-        -o-transition: all 0.35s ease-in-out;
-        transition: all 0.35s ease-in-out;
+        -webkit-transition: all 300ms ease-in-out;
+        transition: all 300ms ease-in-out;
 
         -webkit-transform: rotateX(-90deg);
-        -moz-transform: rotateX(-90deg);
-        -o-transform: rotateX(-90deg);
         transform: rotateX(-90deg);
 
         -webkit-transform-origin: 100% 0%;
@@ -1630,8 +1599,6 @@ th {
     }
     .main-menu.submenu-flip li:hover > ul {
         -webkit-transform: rotateX(0deg);
-        -moz-transform: rotateX(0deg);
-        -o-transform: rotateX(0deg);
         transform: rotateX(0deg);
     }
     .main-menu.submenu-flip ul {
@@ -1649,10 +1616,8 @@ th {
         perspective: 200px;
     }
     .main-menu.submenu-scale li > ul {
-        -webkit-transition: all 0.3s ease;
-        -moz-transition: all 0.3s ease;
-        -o-transition: all 0.3s ease;
-        transition: all 0.3s ease;
+        -webkit-transition: all 300ms ease;
+        transition: all 300ms ease;
 
         -webkit-transform: scale(0);
         transform: scale(0);
@@ -1722,10 +1687,8 @@ div#MobileMenu {
     color: #111111;
     margin: 0;
     position: relative;
-    -webkit-transition: 350ms;
-    -moz-transition: 350ms;
-    -o-transition: 350ms;
-    transition: 350ms;
+    -webkit-transition: 300ms;
+    transition: 300ms;
     font-family: 'Heebo', sans-serif;
 }
 
@@ -1747,7 +1710,7 @@ div#MobileMenu {
     line-height: 1;
     position: absolute;
     background-color: #fff;
-    transition: all 0.2s ease-in-out;
+    transition: all 200ms ease-in-out;
 }
 .canvas-btn span:after {
     position: absolute;
@@ -1784,9 +1747,8 @@ div#MobileMenu {
     z-index: 999;
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
 }
 
 .canvas-header.activate {
@@ -1818,9 +1780,8 @@ div#MobileMenu {
     opacity: 0;
     visibility: hidden;
     overflow-y: scroll;
-    -webkit-transition: 0.5s ease;
-    -o-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
 }
 .canvas-header.activate .canvas-header-block {
     left: -20px;
@@ -1954,7 +1915,7 @@ div#MobileMenu {
         line-height: 1;
         position: absolute;
         background-color: #fff;
-        transition: all 0.2s ease-in-out;
+        transition: all 200ms ease-in-out;
     }
 
     .header-1 .bar-menu span:nth-child(1) {
@@ -1987,8 +1948,6 @@ div#MobileMenu {
     }
     .header-1 .bar-menu.menu-open {
         -webkit-transform: rotate(0deg);
-        -moz-transform: rotate(0deg);
-        -o-transform: rotate(0deg);
         transform: rotate(0deg);
     }
     .header-1 .header-image .bar-menu{
@@ -2055,7 +2014,7 @@ div#MobileMenu {
 }
 .tags__wrapper ul li a {
     padding: 2px 4px;
-    border-radius: 2px;
+    border-radius: 999px;
     font-size: 12px;
     font-weight: 600;
     background: #f5f5f5;
@@ -2123,7 +2082,7 @@ div#MobileMenu {
     font-size: 10px;
     margin-bottom: 5px;
     padding: 5px 8px;
-    background: #f92a28;
+    background: #d42929;
     line-height: 15px;
     text-transform: uppercase;
     font-weight: 600;
@@ -2185,8 +2144,8 @@ div#MobileMenu {
     background: rgba(0, 0, 0, 0.5);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
     outline: none;
 }
 .modern-slider:hover .slick-arrow{
@@ -2604,7 +2563,7 @@ article.format-status .post-content .post-format::after{
   color: #c7c8ca;
   text-align: center;
   line-height: 50px;
-  transition: all .3s;
+  transition: all 300ms;
   cursor: pointer;
   z-index: 99;
 }
@@ -2849,34 +2808,32 @@ a.clean {
     background: #f7f8f8;
     padding: 10px 15px;
     margin: 15px 0 10px 0;
-    border-radius: 3px;
+    border-radius: 6px;
     font-size: 12px;
 }
 a.effect {
     background:#f7f8f8;
     padding: 10px 15px;
     margin: 15px 0 10px 0;
-    border-radius: 3px;
+    border-radius: 6px;
     display: inline-block;
     font-size: 12px;
     position: relative;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
 }
 a.effect:before {
     width: 0%;
     height: 100%;
     top: 0;
     right: 0;
-    background:#337ab7;
-    border-radius: 3px;
+    background:#d42929;
+    border-radius: 6px;
     content: '';
     position: absolute;
     z-index: -1;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    transition: all 0.3s;
+    -webkit-transition: all 300ms;
+    transition: all 300ms;
 }
 a.effect:hover:before,
 a.effect:active:before {
@@ -2930,10 +2887,8 @@ a.effect:active {
     padding: 5px 10px;
     visibility: hidden;
     opacity: 0;
-    -webkit-transition: all 0.15s ease 0.4s;
-    -moz-transition: all 0.15s ease 0.4s;
-    -o-transition: all 0.15s ease 0.4s;
-    transition: all 0.15s ease 0.4s;
+    -webkit-transition: all 160ms ease 300ms;
+    transition: all 160ms ease 300ms;
     text-align: center;
 }
 .meta_bottom .post-share a {
@@ -2960,10 +2915,8 @@ a.effect:active {
     visibility: visible;
     opacity: 1;
     margin-bottom: 0;
-    -webkit-transition: all 0.15s ease 0s;
-    -moz-transition: all 0.15s ease 0s;
-    -o-transition: all 0.15s ease 0s;
-    transition: all 0.15s ease 0s;
+    -webkit-transition: all 160ms ease 0s;
+    transition: all 160ms ease 0s;
 }
 .single .meta_bottom {
     position: relative;
@@ -3470,10 +3423,8 @@ input[type="radio"] {
     vertical-align: middle;
     -webkit-appearance: none;
 
-    -webkit-transition: border-color 0.2s ease;
-    -moz-transition: border-color 0.2s ease;
-    -o-transition: border-color 0.2s ease;
-    transition: border-color 0.2s ease;
+    -webkit-transition: border-color 200ms ease;
+    transition: border-color 200ms ease;
 }
 input[type="checkbox"] {
     border-radius: 0;
@@ -3537,10 +3488,10 @@ input[type="radio"]:checked:before {
     padding: 0;
     width: 72px;
     height: 72px !important;
-    border-radius: 36px;
+    border-radius: 999px;
 }
 .about-author-avatar .avatar-bg-overlay {
-    border-radius: 36px;
+    border-radius: 999px;
 }
 .about-author-avatar:hover .avatar-bg-overlay {
     opacity: 0.2;
@@ -3701,10 +3652,8 @@ input[type="radio"]:checked:before {
     border-top-width: 1px;
     border-radius: 0;
 
-    -webkit-transition: border-color 0.2s ease;
-    -moz-transition: border-color 0.2s ease;
-    -o-transition: border-color 0.2s ease;
-    transition: border-color 0.2s ease;
+    -webkit-transition: border-color 200ms ease;
+    transition: border-color 200ms ease;
 }
 #comment {
     height: 110px;
@@ -3753,10 +3702,8 @@ input[type="radio"]:checked:before {
     background-color: #1f2123;
     border-radius: 0;
 
-    -webkit-transition: background-color 0.2s ease;
-    -moz-transition: background-color 0.2s ease;
-    -o-transition: background-color 0.2s ease;
-    transition: background-color 0.2s ease;
+    -webkit-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
 }
 .comment-form #submit:hover,
 .comment-form #submit:focus {
@@ -3937,7 +3884,7 @@ input[type="radio"]:checked:before {
     height: 46px !important;
     margin: 0 0 0 15px;
     padding: 0;
-    border-radius: 23px;
+    border-radius: 999px;
 }
 
 /* comment metadata: author */
@@ -4346,7 +4293,7 @@ input[type="radio"]:checked:before {
     letter-spacing: 2px;
     padding: 10px 20px !important;
     text-transform: uppercase;
-    transition: all 0.3s ease 0s;
+    transition: all 300ms ease 0s;
 }
 .back_home {
     padding: 20px;
@@ -4634,7 +4581,7 @@ article{
     position: absolute;
     width: 60px;
     height: 3px;
-    background: #337ab7;
+    background: #d42929;
     bottom: -2px;
     content: "";
     right: calc(50% - 30px);
@@ -4965,10 +4912,8 @@ article{
     background: #1f2123;
     border-radius: 0;
 
-    -webkit-transition: background-color 0.2s ease;
-    -moz-transition: background-color 0.2s ease;
-    -o-transition: background-color 0.2s ease;
-    transition: background-color 0.2s ease;
+    -webkit-transition: background-color 200ms ease;
+    transition: background-color 200ms ease;
 }
 .textwidget button:focus,
 .textwidget input[type="button"]:focus,
@@ -5013,10 +4958,8 @@ article{
     border-bottom-color: #e3e5e6;
     border-radius: 0;
 
-    -webkit-transition: border-bottom-color 0.2s ease;
-    -moz-transition: border-bottom-color 0.2s ease;
-    -o-transition: border-bottom-color 0.2s ease;
-    transition: border-bottom-color 0.2s ease;
+    -webkit-transition: border-bottom-color 200ms ease;
+    transition: border-bottom-color 200ms ease;
 }
 .textwidget input[type="date"] {
     padding-top: 7px;
@@ -5069,10 +5012,8 @@ article{
     padding: 9px;
     border: 1px dashed #e3e5e6;
 
-    -webkit-transition: border-color 0.2s ease;
-    -moz-transition: border-color 0.2s ease;
-    -o-transition: border-color 0.2s ease;
-    transition: border-color 0.2s ease;
+    -webkit-transition: border-color 200ms ease;
+    transition: border-color 200ms ease;
 }
 .textwidget input[type="file"]:hover {
     border-color: #d42929;
@@ -5349,7 +5290,7 @@ ul.social-menu li a:before {
     font-family: FontAwesome, sans-serif;
     font-size: 14px;
     padding: 10px;
-    transition: color 0.3s ease-in-out 0s;
+    transition: color 300ms ease-in-out 0s;
     vertical-align: middle;
     line-height: 12px;
     color: #68686d;
@@ -5496,10 +5437,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     padding: 15px;
     background-color: rgba(255, 255, 255, 0.88);
     box-shadow: -6px 6px 18px -2px rgba(14,17,20,0.35);
-    -webkit-transition: bottom 0.2s ease;
-    -moz-transition: bottom 0.2s ease;
-    -o-transition: bottom 0.2s ease;
-    transition: bottom 0.2s ease;
+    -webkit-transition: bottom 200ms ease;
+    transition: bottom 200ms ease;
 }
 .widget_popular_posts_list_item figcaption .post-date{
     margin-bottom: 0;
@@ -5535,10 +5474,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     max-width: 100%;
     padding: 15px;
     background-image: linear-gradient(to bottom, transparent, rgba(0, 0, 0, 0.90));
-    -webkit-transition: bottom 0.2s ease;
-    -moz-transition: bottom 0.2s ease;
-    -o-transition: bottom 0.2s ease;
-    transition: bottom 0.2s ease;
+    -webkit-transition: bottom 200ms ease;
+    transition: bottom 200ms ease;
 }
 .post-slider-section figcaption h4 a,
 .post-slider-section figcaption .post-date{
@@ -5550,7 +5487,7 @@ ul.social-menu li a[href*="dribble.com"]:before {
     display: inline-block;
     font-size: 12px;
     font-weight: 400;
-    border-radius: 3px;
+    border-radius: 6px;
     line-height: normal;
     padding: 4px 12px;
     position: relative;
@@ -5660,7 +5597,7 @@ ul.social-menu li a[href*="dribble.com"]:before {
 .author-profile ul.socials li a i {
     font-size: 14px;
     padding: 10px;
-    transition: color 0.3s ease-in-out 0s;
+    transition: color 300ms ease-in-out 0s;
     vertical-align: middle;
     line-height: 12px;
     color: #68686d;
@@ -5717,16 +5654,14 @@ ul.social-menu li a[href*="dribble.com"]:before {
     height: 30px;
     line-height: 30px;
     text-align: center;
-    border-radius: 15px;
+    border-radius: 999px;
     background-color: rgba(255, 255, 255, 0.71);
     color: #4c4f53;
     font-size: 13px;
     font-style: normal;
     font-weight: 700;
-    -webkit-transition: box-shadow 0.2s ease;
-    -moz-transition: box-shadow 0.2s ease;
-    -o-transition: box-shadow 0.2s ease;
-    transition: box-shadow 0.2s ease;
+    -webkit-transition: box-shadow 200ms ease;
+    transition: box-shadow 200ms ease;
 }
 .widget_featured_content {
     height: 80px;
@@ -5753,10 +5688,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     width: 100%;
     height: 100%;
     background-color: #1f2123;
-    -webkit-transition: opacity 0.2s ease;
-    -moz-transition: opacity 0.2s ease;
-    -o-transition: opacity 0.2s ease;
-    transition: opacity 0.2s ease;
+    -webkit-transition: opacity 200ms ease;
+    transition: opacity 200ms ease;
 }
 .widget_featured_thumbnail:hover .widget_bg_overlay {
     opacity: 0.2;
@@ -5809,10 +5742,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     background: rgb(0 0 0 / 8%);
     content: '';
     opacity: 0.9;
-    transition: all 0.9s ease;
-    -webkit-transition: all 0.9s ease;
-    -moz-transition: all 0.9s ease;
-    -ms-transition: all 0.9s ease;
+    transition: all 300ms ease;
+    -webkit-transition: all 300ms ease;
 }
 
 .tabs-nav li button{
@@ -5919,7 +5850,7 @@ ul.social-menu li a[href*="dribble.com"]:before {
     font-size: 10px;
     margin-bottom: 5px;
     padding: 5px 8px;
-    background: #f92a28;
+    background: #d42929;
     line-height: 15px;
     text-transform: uppercase;
     font-weight: 600;
@@ -5975,8 +5906,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     pointer-events: none;
     position: absolute;
     background-color: rgba(0, 0, 0, 0.3);
-    -webkit-transition: all 0.5s ease;
-    transition: all 0.5s ease;
+    -webkit-transition: all 500ms ease;
+    transition: all 500ms ease;
 }
 .card__post__content.bg__post-cover {
     padding: 20px;
@@ -6004,7 +5935,7 @@ ul.social-menu li a[href*="dribble.com"]:before {
 .trending-news-inner .title {
     float: right;
     padding: 10px 15px;
-    background: #f92a28;
+    background: #d42929;
     color: #fff;
     text-transform: uppercase;
     font-size: 12px;
@@ -6091,8 +6022,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     background: rgba(0, 0, 0, 0.9);
     opacity: 0;
     visibility: hidden;
-    -webkit-transition: 0.5s ease;
-    transition: 0.5s ease;
+    -webkit-transition: 500ms ease;
+    transition: 500ms ease;
     outline: none;
 }
 .news__highlight:hover .slick-arrow{
@@ -6179,8 +6110,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     border: 1px solid #eee;
     background: #fff;
     overflow: hidden;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 300ms;
+    transition: 300ms;
     top: -75px;
     z-index: 1;
 }
@@ -6243,8 +6174,8 @@ ul.social-menu li a[href*="dribble.com"]:before {
     border: 1px solid #eee;
     background: #fff;
     overflow: hidden;
-    -webkit-transition: 0.4s;
-    transition: 0.4s;
+    -webkit-transition: 300ms;
+    transition: 300ms;
     top: -60px;
     z-index: 1;
 }
@@ -6500,10 +6431,8 @@ div[class*="footer-col-"]:last-child {
     background-color: #d42929;
     border-radius: 50%;
     box-shadow: 0 14px 28px -4px rgba(14,17,20,0.15);
-    -webkit-transition: all 0.2s ease;
-    -moz-transition: all 0.2s ease;
-    -o-transition: all 0.2s ease;
-    transition: all 0.2s ease;
+    -webkit-transition: all 200ms ease;
+    transition: all 200ms ease;
 }
 #toTop:hover {
     opacity: 0.9;
@@ -6826,7 +6755,7 @@ div#docile-breadcrumbs {
     line-height: 1;
     text-align: center;
     border: none;
-    border-radius: 23px;
+    border-radius: 999px;
     box-shadow: none;
     text-decoration: none !important;
 }
@@ -7062,7 +6991,7 @@ div#docile-breadcrumbs {
     padding: 0 15px;
     height: 35px;
     line-height: 35px;
-    border-radius: 18px;
+    border-radius: 999px;
     background: #1f2123;
     color: #ffffff;
 }
@@ -7480,7 +7409,7 @@ div#docile-breadcrumbs {
     top: 100%;
     transform: scaleY(0);
     transform-origin: 100% 0 0;
-    transition: all 0.3s ease 0s;
+    transition: all 300ms ease 0s;
     visibility: hidden;
     width: 300px;
     z-index: 999;
@@ -7488,9 +7417,7 @@ div#docile-breadcrumbs {
     -moz-box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
     -o-box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
     box-shadow: 0px 12px 30px -2px rgba(0,0,0,0.1);
-    -webkit-transition: all 0.2s ease-in-out;
-    -moz-transition: all 0.2s ease-in-out;
-    -o-transition: all 0.2s ease-in-out;
+    -webkit-transition: all 200ms ease-in-out;
 }
 .headr_btom_cart ul {
     padding-right: 0px;
@@ -7995,8 +7922,8 @@ div#docile-breadcrumbs {
 /*EXTRA CSS*/
 .pro-btn a:after {
     background: #00cf24;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
     font-size: 10px;
     font-weight: normal;
     line-height: 13px;
@@ -8011,8 +7938,8 @@ div#docile-breadcrumbs {
 }
 .hot-btn a:after {
     background: red;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
     font-size: 10px;
     font-weight: normal;
     line-height: 13px;
@@ -8027,8 +7954,8 @@ div#docile-breadcrumbs {
 }
 .hot-btn-1>a:after {
     background: red;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
     font-size: 10px;
     font-weight: normal;
     line-height: 13px;
@@ -8043,8 +7970,8 @@ div#docile-breadcrumbs {
 }
 .new-btn a:after {
     background: #242424;
-    border-radius: 2px;
-    -webkit-border-radius: 2px;
+    border-radius: 999px;
+    -webkit-border-radius: 999px;
     font-size: 10px;
     font-weight: normal;
     line-height: 13px;
@@ -8058,3 +7985,2069 @@ div#docile-breadcrumbs {
     font-family: sans-serif;
 }
 
+/* ==========================================================================
+   Docile 1.1.3 - typography
+   ========================================================================== */
+
+/*
+ * All six heading levels shared line-height 1.5 and weight 500. At 29px that
+ * leaves a headline looking loose and unemphatic, and it gave a h6 the same
+ * leading as a paragraph. Each level now gets leading suited to its size.
+ */
+h1, h2, h3, h4, h5, h6,
+.h1, .h2, .h3, .h4, .h5, .h6 {
+    font-weight: 700;
+    color: #17181a;
+    letter-spacing: -0.01em;
+    -webkit-font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+    font-feature-settings: "kern" 1, "liga" 1, "calt" 1;
+}
+
+h1, .h1 { line-height: 1.2; }
+h2, .h2 { line-height: 1.25; }
+h3, .h3 { line-height: 1.3; }
+h4, .h4 { line-height: 1.35; }
+h5, .h5 { line-height: 1.4; }
+h6, .h6 { line-height: 1.45; }
+
+body {
+    -webkit-font-feature-settings: "kern" 1, "liga" 1;
+    font-feature-settings: "kern" 1, "liga" 1;
+    text-rendering: optimizeLegibility;
+}
+
+/*
+ * blockquote asked for Playfair Display, which this theme has never enqueued,
+ * so quotes fell back to the browser default serif and clashed with everything
+ * around them. A system serif keeps the intended contrast with no extra
+ * download.
+ */
+blockquote,
+blockquote:before,
+.wp-block-quote {
+    font-family: Georgia, "Times New Roman", Times, serif;
+}
+
+/* 'Arimo' is a sans-serif; a serif fallback rendered Times when it was missing. */
+.comment-list .pingback .comment-body > a,
+.widget_search #searchform .search-field {
+    font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - readable secondary text
+   ========================================================================== */
+
+/*
+ * #989ea6 on white measures about 2.9:1. WCAG AA wants 4.5:1 for body-sized
+ * text, and this grey carried post meta, navigation labels and captions -
+ * exactly the small text that needs the contrast most. #6b7280 measures 5.1:1
+ * and is close enough that the design reads the same.
+ */
+.post-navigation .nav-previous a:before,
+.post-navigation .nav-previous a:after,
+.post-navigation .nav-next a:before,
+.post-navigation .nav-next a:after,
+.posts-navigation .nav-previous a:before,
+.posts-navigation .nav-previous a:after,
+.posts-navigation .nav-next a:before,
+.posts-navigation .nav-next a:after,
+.post-navigation .nav-label,
+.entry-meta,
+.post-date,
+.post-date a,
+.wp-caption-text,
+figcaption,
+.wp-block-image figcaption {
+    color: #6b7280;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - top bar menu
+   ========================================================================== */
+
+/*
+ * .top-menu styled its <li> as inline-block and stopped there. That selector
+ * also matches every nested <li>, and nothing hid .top-menu ul, so a menu with
+ * children rendered its whole tree as an indented browser-default list sitting
+ * above the header - which is what a fresh install gets, because with no menu
+ * assigned WordPress falls back to wp_list_pages().
+ */
+.top-bar-area {
+    background-color: #ffffff;
+    border-bottom: 1px solid #ececee;
+}
+
+.top-menu {
+    position: relative;
+    z-index: 60;
+}
+
+.top-menu li {
+    position: relative;
+    margin-right: 0;
+}
+
+.top-menu > li > a {
+    display: block;
+    padding: 11px 14px;
+    font-size: 13px;
+    font-weight: 500;
+    line-height: 1.4;
+    color: #4c4f53;
+    transition: color 160ms ease;
+}
+
+.top-menu > li:first-child > a {
+    padding-right: 0;
+}
+
+/* A parent needs to look like one before anyone will hover it. */
+.top-menu > li.page_item_has_children > a:after,
+.top-menu > li.menu-item-has-children > a:after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 7px;
+    vertical-align: 2px;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: currentColor;
+    transform: rotate(45deg);
+}
+
+.top-menu ul {
+    position: absolute;
+    top: 100%;
+    right: 0;
+    z-index: 60;
+    min-width: 210px;
+    margin: 0;
+    padding: 6px 0;
+    list-style: none;
+    background-color: #ffffff;
+    border: 1px solid #ececee;
+    border-radius: 10px;
+    box-shadow: 0 14px 34px -6px rgba(23, 24, 26, 0.18);
+    visibility: hidden;
+    opacity: 0;
+    transform: translateY(-6px);
+    /*
+     * visibility cannot be interpolated, so animating it inside "all" flips it
+     * at the midpoint of the fade. Delaying it until the fade-out has finished
+     * keeps the panel clickable only while it is actually on screen.
+     */
+    transition: opacity 200ms ease, transform 200ms cubic-bezier(0.2, 0.7, 0.3, 1), visibility 0s linear 200ms;
+}
+
+.top-menu li:hover > ul,
+.top-menu li:focus-within > ul {
+    visibility: visible;
+    opacity: 1;
+    transform: translateY(0);
+    transition: opacity 160ms ease, transform 200ms cubic-bezier(0.2, 0.7, 0.3, 1), visibility 0s;
+}
+
+/* Third level and deeper open to the side rather than stacking downward. */
+.top-menu ul ul {
+    top: -7px;
+    right: 100%;
+    transform: translateX(6px);
+}
+
+.top-menu li:hover > ul ul,
+.top-menu li:focus-within > ul ul {
+    transform: translateX(6px);
+}
+
+.top-menu ul li:hover > ul,
+.top-menu ul li:focus-within > ul {
+    transform: translateX(0);
+}
+
+.top-menu ul li {
+    display: block;
+    margin-right: 0;
+}
+
+.top-menu ul li > a {
+    display: block;
+    padding: 9px 16px;
+    font-size: 13px;
+    font-weight: 400;
+    line-height: 1.45;
+    color: #4c4f53;
+    white-space: nowrap;
+    transition: color 160ms ease, background-color 160ms ease, padding-left 160ms ease;
+}
+
+.top-menu ul li:hover > a,
+.top-menu ul li > a:focus {
+    background-color: #f6f7f8;
+    padding-right: 20px;
+}
+
+.top-menu ul li.page_item_has_children > a:after,
+.top-menu ul li.menu-item-has-children > a:after {
+    content: "";
+    display: inline-block;
+    width: 4px;
+    height: 4px;
+    margin-right: 8px;
+    vertical-align: 1px;
+    border-style: solid;
+    border-width: 0 1px 1px 0;
+    border-color: currentColor;
+    transform: rotate(135deg);
+}
+
+/*
+ * The divider after the date is drawn on :first-child, so when the social menu
+ * is switched off - the default - it hung off the end of the line with nothing
+ * after it.
+ */
+.top_date_social > div:first-child:last-child:after {
+    content: none;
+}
+
+.today-date p {
+    margin: 0;
+    padding: 11px 0;
+    font-size: 13px;
+    line-height: 1.4;
+    color: #6b7280;
+}
+
+@media (max-width: 991px) {
+
+    /* No hover on a touch screen, so nothing here can open a hover panel. */
+    .top-menu ul {
+        display: none;
+    }
+
+    .top-menu {
+        text-align: center;
+    }
+
+    .top_date_social > div {
+        text-align: center;
+    }
+
+    .top_date_social {
+        text-align: center;
+    }
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - primary menu
+   ========================================================================== */
+
+@media (min-width: 992px) {
+
+    /*
+     * 20px of padding either side plus 0.8px of tracking on uppercase text made
+     * each item wider than it needed to be, and a nine item menu spilled onto a
+     * second row. Tightening both fits a normal menu on one line; a menu long
+     * enough to still wrap now lines up as two even rows instead of drifting.
+     */
+    .main-menu > ul {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .main-menu > ul > li > a {
+        padding: 0 13px;
+        letter-spacing: 0.3px;
+    }
+
+    .main-menu > ul > li:last-child > a {
+        padding: 0 0 0 13px;
+    }
+
+    /*
+     * Submenu links were #818181 on white - about 2.9:1, under the 4.5:1 AA
+     * needs - and hover changed nothing but a 10px dash, so there was no
+     * feedback that a row was selected.
+     */
+    .main-menu ul ul li > a,
+    .main-menu ul ul li:hover > a {
+        color: #3d4045;
+    }
+
+    .main-menu ul ul li:hover > a,
+    .main-menu ul ul li > a:focus {
+        color: #d42929;
+        background-color: #f6f7f8;
+    }
+
+    .main-menu ul li.dropdown_menu > ul a span:before {
+        border-color: #6b7280;
+    }
+
+    .main-menu li > ul {
+        /* 27px pushed the first row a long way from the bar it belongs to. */
+        padding: 8px 0;
+        border-radius: 10px;
+        transform: translateY(-8px);
+        /*
+         * "all" included visibility, which is not interpolatable and so flips
+         * at the midpoint of the fade - the panel took clicks before it had
+         * finished appearing. Delay it past the close instead.
+         */
+        -webkit-transition: opacity 200ms ease, -webkit-transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1), visibility 0s linear 220ms;
+        transition: opacity 200ms ease, transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1), visibility 0s linear 220ms;
+    }
+
+    .main-menu li:focus-within > ul,
+    .main-menu li:focus > ul,
+    .main-menu li:hover > ul {
+        transform: translateY(0);
+        -webkit-transition: opacity 200ms ease, -webkit-transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1), visibility 0s;
+        transition: opacity 200ms ease, transform 220ms cubic-bezier(0.2, 0.7, 0.3, 1), visibility 0s;
+    }
+
+    /* Levels three and up sit beside their parent, so they slide sideways. */
+    .main-menu li > ul ul {
+        transform: translateX(8px) translateY(0);
+    }
+
+    .main-menu li > ul li:hover > ul,
+    .main-menu li > ul li:focus-within > ul {
+        transform: translateX(0) translateY(0);
+    }
+
+    .main-menu ul ul li > a {
+        border-bottom: 1px solid #f1f3f5;
+        -webkit-transition: color 160ms ease, background-color 160ms ease, padding-left 160ms ease;
+        transition: color 160ms ease, background-color 160ms ease, padding-left 160ms ease;
+    }
+
+    .main-menu ul ul li:last-child > a {
+        border-bottom: 0;
+    }
+
+    /* Round only the outer corners, so the panel's radius is not clipped off. */
+    .main-menu ul ul li:first-child > a {
+        border-top-left-radius: 10px;
+        border-top-right-radius: 10px;
+    }
+
+    .main-menu ul ul li:last-child > a {
+        border-bottom-left-radius: 10px;
+        border-bottom-right-radius: 10px;
+    }
+
+    /*
+     * A menu bar drawn straight over a header photo depends entirely on how
+     * bright that photo happens to be. A gradient scrim keeps the labels legible
+     * over a light sky without flattening a dark one.
+     */
+    .header-image .menu-area {
+        background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.18), rgba(0, 0, 0, 0.52));
+    }
+
+    /*
+     * align-self-center centres the offcanvas button against the whole row, so
+     * when the menu wrapped to two lines the button floated between them.
+     */
+    .menu_right {
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        min-height: 86px;
+    }
+}
+
+.canvas-btn {
+    display: inline-block;
+}
+
+/* A 20px icon is below the 44px minimum for a touch target. */
+.canvas-btn:before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 44px;
+    height: 44px;
+    transform: translate(-50%, -50%);
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - visible keyboard focus
+   ========================================================================== */
+
+/*
+ * Several rules reset focus to the resting colour, which leaves a keyboard user
+ * with no idea where they are. :focus-visible keeps the ring off mouse clicks.
+ */
+a:focus-visible,
+button:focus-visible,
+input:focus-visible,
+select:focus-visible,
+textarea:focus-visible,
+[tabindex]:focus-visible {
+    outline: 2px solid #d42929;
+    outline-offset: 2px;
+    border-radius: 2px;
+}
+
+.header-image .menu-area a:focus-visible,
+.site-footer a:focus-visible {
+    outline-color: #ffffff;
+}
+
+.skip-link:focus {
+    outline: 2px solid #d42929;
+    outline-offset: 2px;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - reduced motion
+   ========================================================================== */
+
+@media (prefers-reduced-motion: reduce) {
+
+    *,
+    *:before,
+    *:after {
+        -webkit-animation-duration: 0.01ms !important;
+        animation-duration: 0.01ms !important;
+        -webkit-animation-iteration-count: 1 !important;
+        animation-iteration-count: 1 !important;
+        -webkit-transition-duration: 0.01ms !important;
+        transition-duration: 0.01ms !important;
+        scroll-behavior: auto !important;
+    }
+
+    .main-menu li > ul,
+    .main-menu li:hover > ul,
+    .main-menu li > ul ul,
+    .top-menu ul,
+    .top-menu li:hover > ul {
+        -webkit-transform: none;
+        transform: none;
+    }
+
+    .top-menu ul li:hover > a,
+    .main-menu ul ul li:hover > a {
+        padding-right: 16px;
+    }
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - block widgets
+   ========================================================================== */
+
+/*
+ * Since WordPress 5.8 the default widgets are blocks. A Categories widget is
+ * now .wp-block-categories inside a .widget_block section, not .widget_categories,
+ * and its heading is a plain <h2 class="wp-block-heading"> rather than the
+ * <h2 class="widget-title"> that before_title used to supply. This theme did
+ * style the block classes, but every one of those rules was scoped under
+ * .post-excerpt - the post body - so in a sidebar or footer they matched
+ * nothing and the widgets fell back to browser defaults: disc bullets, default
+ * link colours, no spacing and no widget title bar.
+ */
+
+.widget .wp-block-group,
+.widget .wp-block-group__inner-container {
+    margin: 0;
+    padding: 0;
+}
+
+/* Give a block heading the same treatment before_title gives a classic one. */
+.widget_block h2,
+.widget_block h3,
+.widget .wp-block-heading {
+    position: relative;
+    margin: 0 0 20px;
+    padding-bottom: 20px;
+    font-size: 22px;
+    line-height: 1.3;
+    text-transform: capitalize;
+    color: #2f3235;
+}
+
+.widget_block h2:after,
+.widget_block h3:after,
+.widget .wp-block-heading:after {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    width: 100%;
+    height: 4px;
+    background: #eee;
+}
+
+.widget_block h2:before,
+.widget_block h3:before,
+.widget .wp-block-heading:before {
+    content: "";
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    z-index: 1;
+    width: 50px;
+    height: 4px;
+    background: #d42929;
+}
+
+/* ------------------------------------------------------------- list blocks */
+
+.widget .wp-block-categories,
+.widget .wp-block-archives,
+.widget .wp-block-latest-posts,
+.widget .wp-block-page-list,
+.widget .wp-block-latest-comments {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.widget .wp-block-categories li,
+.widget .wp-block-archives li,
+.widget .wp-block-latest-posts li,
+.widget .wp-block-page-list li {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    border-bottom: 1px solid #eeefef;
+}
+
+.widget .wp-block-categories li:last-child,
+.widget .wp-block-archives li:last-child,
+.widget .wp-block-latest-posts li:last-child,
+.widget .wp-block-page-list li:last-child {
+    border-bottom: 0;
+}
+
+.widget .wp-block-categories li a,
+.widget .wp-block-archives li a,
+.widget .wp-block-latest-posts li a,
+.widget .wp-block-page-list li a {
+    display: block;
+    padding: 10px 0;
+    font-size: 15px;
+    line-height: 1.5;
+    color: #4c4f53;
+    -webkit-transition: color 160ms ease, padding-left 160ms ease;
+    transition: color 160ms ease, padding-left 160ms ease;
+}
+
+.widget .wp-block-categories li a:hover,
+.widget .wp-block-categories li a:focus,
+.widget .wp-block-archives li a:hover,
+.widget .wp-block-archives li a:focus,
+.widget .wp-block-latest-posts li a:hover,
+.widget .wp-block-latest-posts li a:focus,
+.widget .wp-block-page-list li a:hover,
+.widget .wp-block-page-list li a:focus {
+    color: #d42929;
+    padding-right: 6px;
+}
+
+/* Nested categories keep their indent without regaining a bullet. */
+.widget .wp-block-categories li ul,
+.widget .wp-block-page-list li ul {
+    margin: 0;
+    padding-right: 16px;
+    list-style: none;
+    border-top: 1px solid #eeefef;
+}
+
+/*
+ * WordPress prints a list widget count as bare text - "Travel (10)" - with no
+ * element around it. templatesell/filters/widget-counts.php wraps it so it can
+ * be shown as a badge and labelled for a screen reader.
+ */
+.widget .post-count {
+    float: left;
+    min-width: 24px;
+    margin-right: 8px;
+    padding: 0 7px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 22px;
+    text-align: center;
+    color: #ffffff;
+    background-color: #d42929;
+    border-radius: 6px;
+    -webkit-transition: background-color 160ms ease;
+    transition: background-color 160ms ease;
+}
+
+.widget li a:hover .post-count,
+.widget li a:focus .post-count {
+    background-color: #2f3235;
+}
+
+/* ------------------------------------------------------------- dropdowns */
+
+.widget .wp-block-categories-dropdown select,
+.widget .wp-block-archives-dropdown select,
+.widget select {
+    width: 100%;
+    max-width: 100%;
+    padding: 10px 12px;
+    font-size: 15px;
+    color: #4c4f53;
+    background-color: #ffffff;
+    border: 1px solid #dfe2e5;
+    border-radius: 10px;
+}
+
+/* ------------------------------------------------------- latest comments */
+
+.widget .wp-block-latest-comments__comment {
+    margin: 0;
+    padding: 12px 0;
+    font-size: 15px;
+    line-height: 1.6;
+    border-bottom: 1px solid #eeefef;
+}
+
+.widget .wp-block-latest-comments__comment:last-child {
+    border-bottom: 0;
+}
+
+.widget .wp-block-latest-comments__comment-meta {
+    font-size: 15px;
+    line-height: 1.6;
+}
+
+.widget .wp-block-latest-comments__comment-author {
+    font-weight: 700;
+    color: #2f3235;
+}
+
+.widget .wp-block-latest-comments__comment-link {
+    color: #4c4f53;
+}
+
+.widget .wp-block-latest-comments__comment-date {
+    display: block;
+    margin-top: 2px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* --------------------------------------------------------- latest posts */
+
+.widget .wp-block-latest-posts__post-date,
+.widget .wp-block-latest-posts__post-author {
+    display: block;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+.widget .wp-block-latest-posts__featured-image img {
+    border-radius: 6px;
+}
+
+/* ---------------------------------------------------------- search block */
+
+.widget .wp-block-search {
+    margin: 0;
+}
+
+.widget .wp-block-search__label {
+    display: block;
+    margin-bottom: 10px;
+    font-family: "Heebo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    font-weight: 700;
+    color: #2f3235;
+}
+
+.widget .wp-block-search__inside-wrapper {
+    display: flex;
+    padding: 0;
+    border: 0;
+}
+
+.widget .wp-block-search__input {
+    flex: 1 1 auto;
+    min-width: 0;
+    height: 46px;
+    padding: 0 14px;
+    font-size: 15px;
+    color: #4c4f53;
+    background-color: #ffffff;
+    border: 1px solid #dfe2e5;
+    border-left: 0;
+    border-radius: 0 10px 10px 0;
+    -webkit-transition: border-color 160ms ease;
+    transition: border-color 160ms ease;
+}
+
+.widget .wp-block-search__input:focus {
+    border-color: #d42929;
+    outline-offset: 0;
+}
+
+/*
+ * The submit button was near-black while every other action on the page used
+ * the primary colour, so the one control a reader is meant to press looked the
+ * least like a button on the page.
+ */
+.widget .wp-block-search__button {
+    flex: 0 0 auto;
+    height: 46px;
+    margin: 0;
+    padding: 0 20px;
+    font-family: "Heebo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff;
+    background-color: #d42929;
+    border: 0;
+    border-radius: 10px 0 0 10px;
+    cursor: pointer;
+    -webkit-transition: background-color 160ms ease;
+    transition: background-color 160ms ease;
+}
+
+.widget .wp-block-search__button:hover,
+.widget .wp-block-search__button:focus {
+    background-color: #2f3235;
+}
+
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__inside-wrapper {
+    padding: 4px;
+    border: 1px solid #dfe2e5;
+    border-radius: 10px;
+}
+
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__input {
+    border: 0;
+    border-radius: 6px;
+}
+
+.widget .wp-block-search.wp-block-search__button-inside .wp-block-search__button {
+    border-radius: 6px;
+}
+
+/* ------------------------------------------------------------- tag cloud */
+
+.widget .wp-block-tag-cloud a {
+    display: inline-block;
+    margin: 0 6px 8px 0;
+    padding: 6px 14px;
+    font-size: 13px !important;
+    line-height: 1.4;
+    color: #4c4f53;
+    background-color: #f6f7f8;
+    border: 1px solid #e6e8ea;
+    border-radius: 999px;
+    -webkit-transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+    transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.widget .wp-block-tag-cloud a:hover,
+.widget .wp-block-tag-cloud a:focus {
+    color: #ffffff;
+    background-color: #d42929;
+    border-color: #d42929;
+}
+
+/* -------------------------------------------------------------- calendar */
+
+.widget .wp-block-calendar table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+.widget .wp-block-calendar th,
+.widget .wp-block-calendar td {
+    padding: 7px 0;
+    font-size: 14px;
+    text-align: center;
+    border: 1px solid #eeefef;
+}
+
+.widget .wp-block-calendar th {
+    font-weight: 700;
+    background-color: #f6f7f8;
+}
+
+.widget .wp-block-calendar caption {
+    padding-bottom: 10px;
+    font-weight: 700;
+    color: #2f3235;
+}
+
+/* ---------------------------------------------------------------- groups */
+
+.widget .wp-block-group + .wp-block-group {
+    margin-top: 24px;
+}
+
+/*
+ * A sidebar list long enough to run past the article - a full category list, for
+ * instance - leaves the page looking broken. Cap it and let it scroll.
+ */
+.sidebar-area .widget .wp-block-categories,
+.sidebar-area .widget .wp-block-archives,
+.sidebar-area .widget_categories > ul,
+.sidebar-area .widget_archive > ul {
+    max-height: 420px;
+    overflow-y: auto;
+    overscroll-behavior: contain;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - post navigation
+   ========================================================================== */
+
+/*
+ * The previous and next labels used to be CSS content: strings, so no
+ * translator could reach them and a screen reader got a link whose only text
+ * was the neighbouring post title. content-single.php now passes real,
+ * translated labels to the_post_navigation(), which means the decorative
+ * copies have to go or both appear at once.
+ */
+.post-navigation .nav-previous a:before,
+.post-navigation .nav-next a:before {
+    content: none;
+}
+
+.post-navigation .nav-links a {
+    padding: 0;
+}
+
+.post-navigation .nav-links .nav-label {
+    display: block;
+    margin-bottom: 4px;
+    font-size: 12px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: #6b7280;
+}
+
+.post-navigation .nav-links .nav-title {
+    display: block;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.45;
+    color: #2f3235;
+    -webkit-transition: color 160ms ease;
+    transition: color 160ms ease;
+}
+
+.post-navigation .nav-links a:hover .nav-title,
+.post-navigation .nav-links a:focus .nav-title {
+    color: #d42929;
+}
+
+/* Keep room for the arrow glyph the theme still draws either side. */
+.post-navigation .nav-previous a {
+    padding-right: 18px;
+}
+
+.post-navigation .nav-next a {
+    padding-left: 18px;
+}
+
+.post-navigation .nav-previous a:after,
+.post-navigation .nav-next a:after {
+    top: 1px;
+    color: #6b7280;
+}
+
+/*
+ * The two halves are 50% wide with nothing between them, so a long title on the
+ * left ran straight into the right-hand column.
+ */
+.post-navigation .nav-previous {
+    padding-left: 24px;
+}
+
+.post-navigation .nav-next {
+    padding-right: 24px;
+}
+
+@media (max-width: 575px) {
+
+    .post-navigation .nav-previous,
+    .post-navigation .nav-next {
+        float: none;
+        width: 100%;
+        padding: 0;
+        text-align: right;
+    }
+
+    .post-navigation .nav-next {
+        margin-top: 20px;
+    }
+
+    .post-navigation .nav-next a {
+        padding-right: 18px;
+        padding-left: 0;
+    }
+
+    .post-navigation .nav-next a:after {
+        right: 0;
+        left: auto;
+    }
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - underlines
+   ========================================================================== */
+
+/*
+ * The theme sets "text-decoration: none !important" on every link and then
+ * forces an underline back on hover in 27 places, including on things shaped
+ * like buttons - pagination tiles, tag pills, widget titles and card headlines.
+ * An underline belongs on a link inside running prose, not on a tile the reader
+ * already recognises as clickable.
+ */
+.pagination a.page-numbers:hover,
+.widget .widget-title a:hover,
+.widget .widget-title a:focus,
+.widget_block h2 a:hover,
+.widget_block h2 a:focus,
+.post-title a:hover,
+.post-title a:focus,
+.tags__wrapper ul li a:hover,
+.tags__wrapper ul li a:focus,
+.footer-menu li a:hover,
+.footer-menu li a:focus,
+.footer-social-links a:hover,
+.footer-social-links a:focus,
+.post-navigation .nav-links a:hover,
+.post-navigation .nav-links a:focus,
+.posts-navigation .nav-links a:hover,
+.posts-navigation .nav-links a:focus,
+.comment-navigation .nav-links a:hover,
+.comment-navigation .nav-links a:focus,
+.widget .wp-block-tag-cloud a:hover,
+.widget .wp-block-tag-cloud a:focus,
+.widget .wp-block-categories li a:hover,
+.widget .wp-block-archives li a:hover,
+.widget .wp-block-latest-posts li a:hover,
+.widget .wp-block-page-list li a:hover,
+.cat-links a:hover,
+.cat-links a:focus,
+.post-cats > span a:hover,
+.post-cats > span a:focus {
+    text-decoration: none !important;
+}
+
+/*
+ * Prose links keep an underline, because inside a paragraph colour alone is not
+ * enough to tell a link from emphasis - that is WCAG 1.4.1.
+ */
+.post-excerpt p a,
+.entry-content p a,
+.entry-content li a,
+.comment-content a {
+    text-decoration: underline;
+    text-underline-offset: 2px;
+    -webkit-text-decoration-skip: ink;
+    text-decoration-skip-ink: auto;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - post cards
+   ========================================================================== */
+
+/*
+ * The front page lays its cards out three to a row in a flex container, but only
+ * the <article> stretched to the height of its row - the white .post-content
+ * panel inside it stopped at its own text. A row with one long excerpt and two
+ * short ones showed two stunted cards with a gap of page background underneath.
+ */
+.docile_front_loop_block {
+    align-items: flex-start;
+}
+
+.docile_front_loop_block article {
+    display: flex;
+}
+
+.docile_front_loop_block article .post-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+@media (max-width: 767px) {
+
+    /* Two thirds of the screen is not a column, it is a sliver. */
+    .docile_front_loop_block article {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .docile_front_loop_block article {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+}
+
+/*
+ * Post meta wrapped mid-name - "Theme" on one line and "Reviewer" on the next -
+ * because the author and date sat in one run of inline text with no gap.
+ */
+.post-date .entry-meta {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px 16px;
+    align-items: center;
+}
+
+.post-date .entry-meta > span,
+.post-date .entry-meta .posted-on,
+.post-date .entry-meta .byline {
+    white-space: nowrap;
+}
+
+.post-cats {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 6px;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - pagination
+   ========================================================================== */
+
+/*
+ * 50px grey squares, with the current page in near-black while every other
+ * action on the page used the primary colour.
+ */
+.pagination .page-numbers {
+    min-width: 46px;
+    width: auto;
+    height: 46px;
+    padding: 0 14px;
+    line-height: 44px;
+    font-size: 14px;
+    color: #4c4f53;
+    background: #ffffff;
+    border: 1px solid #e2e5e8;
+    border-radius: 10px;
+    box-sizing: border-box;
+    -webkit-transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+    transition: color 160ms ease, background-color 160ms ease, border-color 160ms ease;
+}
+
+.pagination .page-numbers.current {
+    color: #ffffff;
+    background: #d42929;
+    border-color: #d42929;
+}
+
+.pagination a.page-numbers:hover,
+.pagination a.page-numbers:focus {
+    color: #d42929;
+    background: #ffffff;
+    border-color: #d42929;
+}
+
+.pagination .page-numbers.dots {
+    border-color: transparent;
+    background: transparent;
+}
+
+.pagination a.prev.page-numbers,
+.pagination a.next.page-numbers {
+    min-width: 92px;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - trending strip
+   ========================================================================== */
+
+/*
+ * The headline sat in a display: table-cell beside a floated label. Before the
+ * slider script initialises, the two overlap and the first headline is clipped
+ * at the right edge. A flex row cannot overlap, and reserving room on the right
+ * keeps the slider arrows off the text.
+ */
+.trending-news .trending-news-inner,
+.trending-news-two .marquee__inner {
+    display: flex;
+    align-items: stretch;
+    overflow: hidden;
+    border-radius: 10px;
+}
+
+.trending-news .trending-news-inner .title,
+.trending-news-two .title {
+    float: none;
+    flex: 0 0 auto;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    white-space: nowrap;
+}
+
+.trending-news .trending-news-inner .trending-news-slider {
+    flex: 1 1 auto;
+    min-width: 0;
+    padding-left: 70px;
+}
+
+.trending-news .trending-news-inner .trending-news-slider .item-single {
+    display: block;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - comments and forms
+   ========================================================================== */
+
+input[type="text"],
+input[type="email"],
+input[type="url"],
+input[type="password"],
+input[type="search"],
+input[type="number"],
+input[type="tel"],
+input[type="date"],
+textarea,
+select {
+    border-radius: 10px;
+    -webkit-transition: border-color 160ms ease, box-shadow 160ms ease;
+    transition: border-color 160ms ease, box-shadow 160ms ease;
+}
+
+input[type="text"]:focus,
+input[type="email"]:focus,
+input[type="url"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="number"]:focus,
+textarea:focus {
+    border-color: #d42929;
+    box-shadow: 0 0 0 3px rgba(212, 41, 41, 0.12);
+}
+
+input[type="submit"],
+button[type="submit"],
+.wp-block-button__link {
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: background-color 160ms ease, color 160ms ease;
+    transition: background-color 160ms ease, color 160ms ease;
+}
+
+/*
+ * WordPress already prints the required marker inside the label, so a second
+ * one added in CSS gave every required field two asterisks.
+ */
+.comment-form-comment label:after,
+.comment-form-author label:after,
+.comment-form-email label:after {
+    content: none;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - corner radii
+   ========================================================================== */
+
+/*
+ * Radii were picked ad hoc: 2, 3, 4, 6, 8, 10, 12, 15, 18, 23, 36 and 40px all
+ * appear. Everything added or reworked in this release uses one scale - 10px
+ * for surfaces and controls, 6px for small inline pieces, 999px for pills - so
+ * the parts of the page that sit next to each other agree.
+ */
+.widget,
+.post-wrap,
+.comment-respond,
+.comment-body,
+.author-box,
+.related-posts .post-wrap {
+    border-radius: 10px;
+}
+
+.docile_front_loop_block article .post-media img,
+.blog .post-wrap > .post-media img,
+.archive .post-wrap > .post-media img,
+.search .post-wrap > .post-media img,
+.single .post-wrap > .post-media img,
+.related-posts .post-media img {
+    border-radius: 10px 10px 0 0;
+}
+
+/*
+ * Tiles that butt up against each other stay square: the featured mosaic, the
+ * grid slider, the trending strip thumbnails and the widget post lists.
+ */
+.slide-wrap img,
+.slide-wrap .no-image-slider,
+.no-image-grid,
+.no-image-missed,
+.no-image-slider-right,
+.card__post .card__post__body img,
+.post__grid img,
+.promo-slider-wrapper img,
+.promo-grid-slider-wrapper img,
+.slider-wrapper img,
+.trending-news-two .marquee-slide img,
+.trending-news .trending-news-inner img {
+    border-radius: 0;
+}
+
+.widget img,
+.comment-content img,
+.avatar {
+    border-radius: 6px;
+}
+
+.widget .avatar,
+.comment-author .avatar {
+    border-radius: 999px;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - trending ticker
+   ========================================================================== */
+
+/*
+ * The ticker track has to be allowed to shrink, or a long list of headlines
+ * pushes the label out of the strip instead of scrolling inside it.
+ */
+.trending-news-two .marquee-slide,
+.trending-news .trending-news-inner .trending-news-slider {
+    flex: 1 1 auto;
+    min-width: 0;
+}
+
+.trending-news-two .marquee__inner {
+    align-items: center;
+}
+
+.trending-news-two .title i {
+    line-height: 1;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - prose links
+   ========================================================================== */
+
+/*
+ * style-rtl.css replaces style.css outright rather than layering on top of it,
+ * and it is an older copy: it never picked up the rule that underlines links
+ * inside post content. So on a right-to-left site, a link in a paragraph was
+ * told apart from the text around it by colour alone, which WCAG 1.4.1 does not
+ * accept. Stating it here keeps both sheets equivalent.
+ */
+.post-content .post-excerpt p a,
+.post-content .post-excerpt li a,
+.post-content .entry-content p a,
+.post-content .entry-content li a {
+    text-decoration: underline !important;
+    text-underline-offset: 2px;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - top bar on small screens
+   ========================================================================== */
+
+@media (max-width: 767px) {
+
+    /*
+     * A nine item utility menu stacks three rows deep on a phone and pushes the
+     * masthead off the first screen. Tighten it so it costs one row of chrome
+     * rather than three.
+     */
+    .top-menu > li > a {
+        padding: 7px 9px;
+        font-size: 12px;
+    }
+
+    .top-menu > li:first-child > a {
+        padding-right: 9px;
+    }
+
+    .today-date p {
+        padding: 6px 0;
+        font-size: 12px;
+    }
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - cards with no featured image
+   ========================================================================== */
+
+/*
+ * A post with no featured image gets an empty div standing in for the picture,
+ * filled with #f7f7f7. The card then prints its headline, category and byline
+ * over that div in white. White on #f7f7f7 is about 1.05:1 - the text is
+ * effectively invisible, and it is the headline. A dark placeholder keeps the
+ * caption at better than 12:1 and still reads as "no image" rather than as a
+ * broken one.
+ */
+.no-image,
+.no-image-slider,
+.no-image-grid,
+.no-image-missed,
+.no-image-slider-right {
+    background-color: #2b3038;
+    background-image: linear-gradient(135deg, #333942 0%, #22262c 100%);
+}
+
+/*
+ * The overlay gradient these cards use to lift their caption assumed a photo
+ * underneath. Over a flat placeholder it does nothing, so state the scrim.
+ */
+.card__post .card__post__body:after,
+.slide-wrap:after {
+    pointer-events: none;
+}
+
+.no-image + .card__post__content,
+.no-image-grid + .card__post__content,
+.no-image-missed + .card__post__content {
+    background-image: linear-gradient(to top, rgba(0, 0, 0, 0.55), rgba(0, 0, 0, 0));
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - one button treatment
+   ========================================================================== */
+
+/*
+ * The theme had five different ways of drawing the same control:
+ *
+ *   .search-no-results / .page-404-content submit   #212121 on a #333 border
+ *   .textwidget input[type="submit"]                #1f2123, square
+ *   .widget .search-form .search-submit             #efefef with grey text
+ *   .widget_search #searchform .search-submit       transparent, underlined
+ *   .comment-form #submit                           its own thing again
+ *
+ * So the search button on the 404 page was black while the search button in the
+ * sidebar beside it was the accent colour, and neither looked like the comment
+ * form's submit. One treatment, one radius, one hover.
+ */
+
+.search-no-results .search-form input[type="submit"],
+.page-404-content .search-form input[type="submit"],
+.textwidget input[type="submit"],
+.textwidget button,
+.widget .search-form .search-submit,
+.search-wrapper .search-form .search-submit,
+.comment-form #submit,
+.wp-block-search__button {
+    color: #ffffff;
+    background-color: #d42929;
+    border: 1px solid #d42929;
+    font-family: "Heebo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-weight: 700;
+    border-radius: 10px;
+    cursor: pointer;
+    -webkit-transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+    transition: background-color 160ms ease, border-color 160ms ease, color 160ms ease;
+}
+
+.search-no-results .search-form input[type="submit"]:hover,
+.search-no-results .search-form input[type="submit"]:focus,
+.page-404-content .search-form input[type="submit"]:hover,
+.page-404-content .search-form input[type="submit"]:focus,
+.textwidget input[type="submit"]:hover,
+.textwidget input[type="submit"]:focus,
+.textwidget button:hover,
+.textwidget button:focus,
+.widget .search-form .search-submit:hover,
+.widget .search-form .search-submit:focus,
+.search-wrapper .search-form .search-submit:hover,
+.search-wrapper .search-form .search-submit:focus,
+.comment-form #submit:hover,
+.comment-form #submit:focus,
+.wp-block-search__button:hover,
+.wp-block-search__button:focus {
+    color: #ffffff;
+    background-color: #2f3235;
+    border-color: #2f3235;
+}
+
+/*
+ * The field beside those buttons was square with a hard right edge because the
+ * two were meant to read as one control. Keep that, on the shared radius.
+ */
+.search-no-results .search-form .search-field,
+.page-404-content .search-form .search-field,
+.widget .search-field,
+.search-wrapper .search-field {
+    border-radius: 0 10px 10px 0;
+}
+
+.search-no-results .search-form input[type="submit"],
+.page-404-content .search-form input[type="submit"],
+.widget .search-form .search-submit,
+.search-wrapper .search-form .search-submit {
+    border-radius: 10px 0 0 10px;
+    margin-right: -1px;
+}
+
+/*
+ * The sidebar's other search variant drew its button as transparent text with
+ * an underline, which read as a link rather than the button it is.
+ */
+.widget_search #searchform .search-submit {
+    padding: 0 20px;
+    height: 45px;
+    color: #ffffff;
+    background: #d42929;
+    border: 1px solid #d42929;
+    border-radius: 10px 0 0 10px;
+}
+
+.widget_search #searchform .search-submit:hover,
+.widget_search #searchform .search-submit:focus {
+    color: #ffffff;
+    background: #2f3235;
+    border-color: #2f3235;
+}
+
+/*
+ * "Back to Home" was the only call to action on the 404 page and it was drawn
+ * as underlined body text.
+ */
+.page-404-content .back_home a,
+.error-404 .back_home a {
+    display: inline-block;
+    margin-top: 8px;
+    padding: 12px 26px;
+    font-family: "Heebo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-weight: 700;
+    color: #ffffff !important;
+    background-color: #d42929;
+    border-radius: 10px;
+    text-decoration: none !important;
+    -webkit-transition: background-color 160ms ease;
+    transition: background-color 160ms ease;
+}
+
+.page-404-content .back_home a:hover,
+.page-404-content .back_home a:focus,
+.error-404 .back_home a:hover,
+.error-404 .back_home a:focus {
+    color: #ffffff !important;
+    background-color: #2f3235;
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - masthead legibility
+   ========================================================================== */
+
+/*
+ * The site title is printed straight onto the header image with only a flat 20%
+ * black wash behind it. Over a bright sky - the default header image is a
+ * sunset - white on that is close to unreadable. A gradient anchored at the top,
+ * where the title sits, fixes it without darkening the picture overall.
+ */
+.header-image .head_one {
+    position: relative;
+}
+
+.header-image .head_one:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    height: 60%;
+    pointer-events: none;
+    background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0.45), rgba(0, 0, 0, 0));
+}
+
+.header-image .head_one > .container {
+    position: relative;
+    z-index: 1;
+}
+
+.main-header.header-image .site-title a,
+.main-header.header-image .logo p {
+    text-shadow: 0 1px 3px rgba(0, 0, 0, 0.45);
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - image ratios
+   ========================================================================== */
+
+/*
+ * Card thumbnails were a fixed 200px tall whatever shape the original was, so a
+ * portrait photograph was cropped to a letterbox. An aspect ratio crops the
+ * same way but scales with the column, which matters once three columns become
+ * one on a phone.
+ */
+@supports (aspect-ratio: 16 / 9) {
+
+    .docile_front_loop_block article .post-media img {
+        height: auto;
+        aspect-ratio: 16 / 10;
+    }
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - news grid
+   ========================================================================== */
+
+/*
+ * The front page loop is the paper's front page. It reads as one sheet with
+ * headlines ruled off from each other, not as a tray of separate cards.
+ */
+.docile_front_loop_block,
+    .search .site-main,
+    .archive .site-main {
+    align-items: stretch;
+    margin-left: 0;
+    margin-right: 0;
+    padding: 0;
+    background-color: #ffffff;
+    border: 1px solid #e9ebed;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.docile_front_loop_block article,
+    .search .site-main article,
+    .archive .site-main article {
+    display: flex;
+    margin: 0;
+    padding: 0;
+    /*
+     * The rules between items are drawn as the item's own right and bottom
+     * borders, so the outer edge of the sheet never doubles up.
+     */
+    border-right: 1px solid #eef0f2;
+    border-bottom: 1px solid #eef0f2;
+}
+
+.docile_front_loop_block article .post-wrap,
+    .search .site-main article .post-wrap,
+    .archive .site-main article .post-wrap {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background: none;
+    border: 0;
+    border-radius: 0;
+    box-shadow: none;
+}
+
+.docile_front_loop_block article .post-content,
+    .search .site-main article .post-content,
+    .archive .site-main article .post-content {
+    padding: 18px 16px 20px;
+    background: none;
+}
+
+/* -------------------------------------------------------------- thumbnail */
+
+/*
+ * A news thumbnail supports the headline, it does not lead it, so it stays
+ * modest and never rounds - a rounded corner inside a ruled grid breaks the
+ * line the rules are drawing.
+ */
+.docile_front_loop_block article .post-media,
+    .search .site-main article .post-media,
+    .archive .site-main article .post-media {
+    position: relative;
+    overflow: hidden;
+}
+
+.docile_front_loop_block article .post-media img,
+    .search .site-main article .post-media img,
+    .archive .site-main article .post-media img {
+    display: block;
+    width: 100%;
+    height: 175px;
+    border-radius: 0;
+    -o-object-fit: cover;
+    object-fit: cover;
+}
+
+@supports (aspect-ratio: 16 / 9) {
+
+    .docile_front_loop_block article .post-media img,
+    .search .site-main article .post-media img,
+    .archive .site-main article .post-media img {
+        height: auto;
+        aspect-ratio: 16 / 9;
+    }
+}
+
+/* ------------------------------------------------------------- kicker ---- */
+
+/*
+ * The category is a kicker: small, set in the accent, sitting above the
+ * headline the way a section label does in print.
+ */
+.docile_front_loop_block article .post-cats,
+    .search .site-main article .post-cats,
+    .archive .site-main article .post-cats {
+    margin-bottom: 8px;
+    font-size: 11px;
+    font-weight: 700;
+    line-height: 1.4;
+    letter-spacing: 0.08em;
+    text-transform: uppercase;
+}
+
+.docile_front_loop_block article .post-cats a,
+    .search .site-main article .post-cats a,
+    .archive .site-main article .post-cats a {
+    color: #d42929;
+}
+
+/* ------------------------------------------------------------- headline -- */
+
+.docile_front_loop_block article .post_title,
+    .search .site-main article .post_title,
+    .archive .site-main article .post_title {
+    margin-bottom: 8px;
+}
+
+.docile_front_loop_block article .post-title,
+    .search .site-main article .post-title,
+    .archive .site-main article .post-title {
+    margin: 0;
+    font-size: 18px;
+    font-weight: 700;
+    line-height: 1.28;
+    letter-spacing: -0.015em;
+}
+
+.docile_front_loop_block article .post-title a,
+    .search .site-main article .post-title a,
+    .archive .site-main article .post-title a {
+    color: #17181a;
+    -webkit-transition: color 160ms ease;
+    transition: color 160ms ease;
+}
+
+.docile_front_loop_block article .post-wrap:hover .post-title a,
+    .search .site-main article .post-wrap:hover .post-title a,
+    .archive .site-main article .post-wrap:hover .post-title a,
+.docile_front_loop_block article .post-title a:hover,
+    .search .site-main article .post-title a:hover,
+    .archive .site-main article .post-title a:hover,
+.docile_front_loop_block article .post-title a:focus,
+    .search .site-main article .post-title a:focus,
+    .archive .site-main article .post-title a:focus {
+    color: #d42929;
+}
+
+/* Four lines is where a headline stops being a headline. */
+.docile_front_loop_block article .post-title a,
+    .search .site-main article .post-title a,
+    .archive .site-main article .post-title a {
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/* ----------------------------------------------------------------- meta -- */
+
+.docile_front_loop_block article .post-meta,
+    .search .site-main article .post-meta,
+    .archive .site-main article .post-meta {
+    margin-bottom: 10px;
+}
+
+.docile_front_loop_block article .post-date,
+    .search .site-main article .post-date,
+    .archive .site-main article .post-date {
+    margin: 0;
+    font-size: 12px;
+    color: #6b7280;
+}
+
+.docile_front_loop_block article .post-date a,
+    .search .site-main article .post-date a,
+    .archive .site-main article .post-date a {
+    color: #6b7280;
+}
+
+.docile_front_loop_block article .post-date .entry-meta,
+    .search .site-main article .post-date .entry-meta,
+    .archive .site-main article .post-date .entry-meta {
+    gap: 2px 12px;
+}
+
+.docile_front_loop_block article .post-date i,
+    .search .site-main article .post-date i,
+    .archive .site-main article .post-date i {
+    margin-left: 5px;
+    opacity: 0.7;
+}
+
+/* -------------------------------------------------------------- standfirst */
+
+.docile_front_loop_block article .post-excerpt,
+    .search .site-main article .post-excerpt,
+    .archive .site-main article .post-excerpt {
+    padding-top: 0;
+    border-top: 0;
+    font-size: 14.5px;
+    line-height: 1.6;
+    color: #55585c;
+}
+
+.docile_front_loop_block article .post-excerpt p,
+    .search .site-main article .post-excerpt p,
+    .archive .site-main article .post-excerpt p {
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    margin: 0;
+}
+
+.docile_front_loop_block article:not(.has-post-thumbnail) .post-excerpt p,
+    .search .site-main article:not(.has-post-thumbnail) .post-excerpt p,
+    .archive .site-main article:not(.has-post-thumbnail) .post-excerpt p {
+    -webkit-line-clamp: 5;
+}
+
+.docile_front_loop_block article .post-excerpt .page-links,
+    .search .site-main article .post-excerpt .page-links,
+    .archive .site-main article .post-excerpt .page-links {
+    margin-top: 10px;
+    font-size: 13px;
+    color: #6b7280;
+}
+
+/* ---------------------------------------------------------------- sticky -- */
+
+/*
+ * A pinned story gets a rule in the accent above its kicker. That is enough to
+ * read as "this one is being held at the top" without boxing it.
+ */
+.docile_front_loop_block article.sticky .post-wrap,
+    .search .site-main article.sticky .post-wrap,
+    .archive .site-main article.sticky .post-wrap {
+    position: relative;
+}
+
+.docile_front_loop_block article.sticky .post-wrap:after,
+    .search .site-main article.sticky .post-wrap:after,
+    .archive .site-main article.sticky .post-wrap:after {
+    content: "";
+    position: absolute;
+    top: 0;
+    right: 0;
+    z-index: 3;
+    width: 46px;
+    height: 3px;
+    background-color: #d42929;
+}
+
+/* ------------------------------------------------------------- the rules -- */
+
+/*
+ * Three across on a desktop: every third item ends a row, so it carries no
+ * right rule, and the last row carries no bottom rule.
+ */
+@media (min-width: 992px) {
+
+    .docile_front_loop_block article:nth-child(3n),
+    .search .site-main article:nth-child(3n),
+    .archive .site-main article:nth-child(3n) {
+        border-left: 0;
+    }
+
+    .docile_front_loop_block article:nth-last-child(-n+3):nth-child(3n+1),
+    .search .site-main article:nth-last-child(-n+3):nth-child(3n+1),
+    .archive .site-main article:nth-last-child(-n+3):nth-child(3n+1),
+    .docile_front_loop_block article:nth-last-child(-n+3):nth-child(3n+1) ~ article,
+    .search .site-main article:nth-last-child(-n+3):nth-child(3n+1) ~ article,
+    .archive .site-main article:nth-last-child(-n+3):nth-child(3n+1) ~ article {
+        border-bottom: 0;
+    }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+    .docile_front_loop_block article,
+    .search .site-main article,
+    .archive .site-main article {
+        -ms-flex: 0 0 50%;
+        flex: 0 0 50%;
+        max-width: 50%;
+    }
+
+    .docile_front_loop_block article:nth-child(2n),
+    .search .site-main article:nth-child(2n),
+    .archive .site-main article:nth-child(2n) {
+        border-left: 0;
+    }
+
+    .docile_front_loop_block article:nth-last-child(-n+2):nth-child(2n+1),
+    .search .site-main article:nth-last-child(-n+2):nth-child(2n+1),
+    .archive .site-main article:nth-last-child(-n+2):nth-child(2n+1),
+    .docile_front_loop_block article:nth-last-child(-n+2):nth-child(2n+1) ~ article,
+    .search .site-main article:nth-last-child(-n+2):nth-child(2n+1) ~ article,
+    .archive .site-main article:nth-last-child(-n+2):nth-child(2n+1) ~ article {
+        border-bottom: 0;
+    }
+}
+
+@media (max-width: 767px) {
+
+    /*
+     * On a phone a news list is horizontal: thumbnail left, headline right, so
+     * four or five stories fit on a screen instead of one.
+     */
+    .docile_front_loop_block article,
+    .search .site-main article,
+    .archive .site-main article {
+        -ms-flex: 0 0 100%;
+        flex: 0 0 100%;
+        max-width: 100%;
+        border-left: 0;
+    }
+
+    .docile_front_loop_block article:last-child,
+    .search .site-main article:last-child,
+    .archive .site-main article:last-child {
+        border-bottom: 0;
+    }
+
+    .docile_front_loop_block article .post-wrap,
+    .search .site-main article .post-wrap,
+    .archive .site-main article .post-wrap {
+        flex-direction: row;
+        align-items: flex-start;
+        padding: 16px;
+    }
+
+    .docile_front_loop_block article .post-media,
+    .search .site-main article .post-media,
+    .archive .site-main article .post-media {
+        flex: 0 0 108px;
+        max-width: 108px;
+        margin-left: 14px;
+    }
+
+    .docile_front_loop_block article .post-media img,
+    .search .site-main article .post-media img,
+    .archive .site-main article .post-media img {
+        height: 76px;
+        aspect-ratio: auto;
+        border-radius: 6px;
+    }
+
+    .docile_front_loop_block article .post-content,
+    .search .site-main article .post-content,
+    .archive .site-main article .post-content {
+        flex: 1 1 auto;
+        min-width: 0;
+        padding: 0;
+    }
+
+    .docile_front_loop_block article .post-title,
+    .search .site-main article .post-title,
+    .archive .site-main article .post-title {
+        font-size: 16px;
+    }
+
+    /* On a narrow screen the standfirst is what gets cut, not the headline. */
+    .docile_front_loop_block article .post-excerpt,
+    .search .site-main article .post-excerpt,
+    .archive .site-main article .post-excerpt {
+        display: none;
+    }
+
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - block styles
+   ========================================================================== */
+
+/*
+ * The three variations registered in inc/block-patterns.php. They were styled
+ * in css/editor-styles.css, so they looked right while being written and did
+ * nothing once published - which is the worse half of the bug to have.
+ */
+
+.wp-block-quote.is-style-docile-statement,
+.entry-content .wp-block-quote.is-style-docile-statement {
+    margin: 0 0 40px;
+    padding: 26px 30px;
+    border: 0;
+    border-right: 3px solid #d42929;
+    background-color: #f6f7f8;
+    border-radius: 10px;
+    font-family: Georgia, "Times New Roman", Times, serif;
+    font-size: 20px;
+    line-height: 1.55;
+    color: #2f3235;
+}
+
+.wp-block-quote.is-style-docile-statement:before {
+    content: none;
+}
+
+.wp-block-quote.is-style-docile-statement p:last-of-type {
+    margin-bottom: 0;
+}
+
+.wp-block-quote.is-style-docile-statement cite {
+    display: block;
+    margin-top: 14px;
+    font-family: "Arimo", "Helvetica Neue", Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    font-style: normal;
+    color: #6b7280;
+}
+
+.wp-block-image.is-style-docile-framed img {
+    padding: 8px;
+    background-color: #ffffff;
+    border: 1px solid #e6e8ea;
+    border-radius: 10px;
+}
+
+.wp-block-image.is-style-docile-framed figcaption {
+    margin-top: 10px;
+    font-size: 14px;
+    color: #6b7280;
+}
+
+.is-style-docile-checklist {
+    list-style: none;
+    padding-right: 0;
+}
+
+.is-style-docile-checklist li {
+    position: relative;
+    margin-bottom: 10px;
+    padding-right: 30px;
+    list-style: none;
+}
+
+.is-style-docile-checklist li:before {
+    content: "";
+    position: absolute;
+    right: 4px;
+    top: 0.55em;
+    width: 12px;
+    height: 6px;
+    border-right: 2px solid #d42929;
+    border-bottom: 2px solid #d42929;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - news grid spacing
+   ========================================================================== */
+
+/*
+ * The loop is one panel now, and it had no margin under it, so the pagination
+ * sat directly against its bottom edge with nothing between the last headline
+ * and the page numbers. .pagination carries its own 50px below and none above,
+ * which was fine while every story was a separate floating card and reads as a
+ * collision now.
+ */
+.docile_front_loop_block,
+    .search .site-main,
+    .archive .site-main {
+    margin-bottom: 30px;
+}
+
+.pagination {
+    margin-top: 0;
+}
+
+/*
+ * The pinned marker is drawn at the very corner of the panel, where the panel's
+ * own 10px radius clips it into a wedge. Inset it so it reads as a deliberate
+ * tab rather than as something poking out.
+ */
+.docile_front_loop_block article.sticky .post-wrap:after,
+    .search .site-main article.sticky .post-wrap:after,
+    .archive .site-main article.sticky .post-wrap:after {
+    top: 0;
+    right: 16px;
+    width: 40px;
+    border-bottom-right-radius: 2px;
+    border-bottom-left-radius: 2px;
+}
+
+/*
+ * The three hero sections above the loop each set their own bottom spacing, so
+ * the gaps between the mosaic, the slider and the loop were all different.
+ */
+.slider-wrapper,
+.promo-slider-wrapper,
+.promo-grid-slider-wrapper,
+.slider-below-widget-wrapper {
+    margin-bottom: 30px;
+}
+
+.trending-news-two {
+    margin-bottom: 30px;
+}
+
+@media (max-width: 767px) {
+
+    .docile_front_loop_block,
+    .search .site-main,
+    .archive .site-main {
+        margin-bottom: 24px;
+    }
+
+    .slider-wrapper,
+    .promo-slider-wrapper,
+    .promo-grid-slider-wrapper,
+    .slider-below-widget-wrapper,
+    .trending-news-two {
+        margin-bottom: 24px;
+    }
+
+    .docile_front_loop_block article.sticky .post-wrap:after,
+    .search .site-main article.sticky .post-wrap:after,
+    .archive .site-main article.sticky .post-wrap:after {
+        right: 16px;
+    }
+}
+
+/* ==========================================================================
+   Docile 1.1.3 - kicker length
+   ========================================================================== */
+
+/*
+ * docile_entry_meta() prints every category a post belongs to. A post filed
+ * under thirty of them turns the kicker into a wall of uppercase orange that
+ * fills the cell and pushes the headline out of sight - the one thing the cell
+ * exists to show. Two lines is as much section label as any story needs; the
+ * rest is still in the markup for a screen reader and for search engines.
+ */
+.docile_front_loop_block article .post-cats,
+.search .site-main article .post-cats,
+.archive .site-main article .post-cats {
+    display: -webkit-box;
+    -webkit-line-clamp: 2;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+}
+
+/*
+ * The same list runs under the headline on a single post, where there is room
+ * for it but no reason for it to run to twenty lines either.
+ */
+.single .post-cats {
+    max-height: 4.4em;
+    overflow: hidden;
+}

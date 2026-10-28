@@ -7,6 +7,15 @@
  * @package Docile
  */
 
+/**
+ * Theme version, used to cache-bust every asset the theme enqueues.
+ *
+ * Keep this in step with the Version header in style.css.
+ */
+if ( ! defined( 'DOCILE_VERSION' ) ) {
+	define( 'DOCILE_VERSION', '1.1.3' );
+}
+
 if ( ! function_exists( 'docile_setup' ) ) :
 	/**
 	 * Sets up theme defaults and registers support for various WordPress features.
@@ -25,7 +34,7 @@ if ( ! function_exists( 'docile_setup' ) ) :
 		 * If you're building a theme based on Docile, use a find and replace
 		 * to change 'docile' to the name of your theme in all the template files.
 		 */
-		load_theme_textdomain( 'docile' );
+		load_theme_textdomain( 'docile', get_template_directory() . '/languages' );
 
 		// Add default posts and comments RSS feed links to head.
 		add_theme_support( 'automatic-feed-links' );
@@ -79,8 +88,8 @@ if ( ! function_exists( 'docile_setup' ) ) :
 		) );
 
 		// Set up the WordPress core custom background feature.
-        add_theme_support('custom-background', apply_filters('refined_magazine_custom_background_args', array(
-            'default-color' => 'fafafa ',
+        add_theme_support('custom-background', apply_filters('docile_custom_background_args', array(
+            'default-color' => 'fafafa',
             'default-image' => '',
         )));
 
@@ -90,6 +99,12 @@ if ( ! function_exists( 'docile_setup' ) ) :
 
 		// Add support for responsive embedded content.
 		add_theme_support( 'responsive-embeds' );
+
+		// Let blocks use the wide and full alignments the layout supports.
+		add_theme_support( 'align-wide' );
+
+		// Render posts in the editor the way the front end will show them.
+		add_editor_style( 'css/editor-styles.css' );
 
 		// Add support for default block styles.
 		add_theme_support( 'wp-block-styles' );
@@ -261,3 +276,8 @@ add_action( 'widgets_init', 'docile_widgets_init' );
  * Load TS Core Files
  */
 require get_template_directory() . '/templatesell/ts-core-files.php';
+
+/**
+ * Block patterns and block styles.
+ */
+require get_template_directory() . '/inc/block-patterns.php';
